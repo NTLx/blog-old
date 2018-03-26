@@ -1,2 +1,2 @@
-# blog
-My blog build in Github
+# lx_blog
+My blog

@@ -1,0 +1,571 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114672259-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114672259-1');
+</script>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Genome_Assembly_study.md</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+#write > figure:first-child { margin-top: 16px; }
+figure { overflow-x: auto; margin: -8px 0px 0px -8px; max-width: calc(100% + 16px); padding: 8px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.CodeMirror-line { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background-color: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; background-position: initial initial; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print { 
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > img:only-child { display: block; margin: auto; }
+p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+.md-tag { opacity: 0.5; }
+pre, code, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-print-anchor { border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background-color: transparent !important; text-shadow: initial !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+table tr th { border-bottom-width: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/lx/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/lx/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/lx/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/lx/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff')
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write{
+    max-width: 60em;
+  	margin: 0 auto;
+  	padding: 20px 30px 40px 30px;
+	padding-top: 20px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+a {
+    color: #4183C4;
+}
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #FFBF00;
+}
+h2 {
+    border-bottom: 1px solid #FFBF00;
+}
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/lx/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #FFBF00;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #FFBF00;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p{
+    margin: 0.8em 0.5em;
+    line-height: 1.5em;
+}
+blockquote {
+    border-left: 4px solid #FFBF00;
+    padding: 0 15px;
+    color: #777777;
+}
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ddd;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #FFBF00;
+    padding: 0 15px;
+    color: #777777;
+    margin-left: 1em;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #cccccc;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.task-list{
+	padding-left: 0;
+}
+
+.task-list-item {
+	padding-left:32px;
+}
+
+.task-list-item input {
+  top: 3px;
+  left: 8px;
+}
+
+@media screen and (min-width: 914px) {
+    /*body {
+        width: 854px;
+        margin: 0 auto;
+    }*/
+}
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag{
+	color: inherit;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac show-fences-line-number'><h1><a name='header-n0' class='md-header-anchor '></a>基因组测序、组装与分析总结</h1><h2><a name='header-n2' class='md-header-anchor '></a>1. 测序前的准备</h2><p>搜集物种相关信息，比如基因组大小，杂合度，</p><h3><a name='header-n5' class='md-header-anchor '></a>1.1 获取基因组大小</h3><p>基因组大小的获取关系到对以后组装结果的大小的正确与否判断；基因组太大（&gt;10Gb），超出了目前denovo组装基因组软件的对机器内存的要求，从客观条件上讲是无法实现组装的。</p><p>一般物种的基因组大小可以从（<a href='http://www.genomesize.com/' target='_blank' >http://www.genomesize.com/</a> ）这个数据库查到。如果没有搜录，需要考虑通过实验（流式细胞仪）获得基因组大小。</p><p><strong>1.1.1 流式细胞仪估计基因组大小的例子：</strong></p><p>Yoshida, S., J. K. Ishida, et al. (2010). &quot;A full-length enriched cDNA library and expressed sequence tag analysis of the parasitic weed, Striga hermonthica.&quot; BMC Plant Biol 10: 55.</p><p><strong>1.1.2 基于福尔根染色估计基因组大小的描述：</strong></p><p>这本书比较经典，重点推荐：Gregory, T. (2005). The evolution of the genome, Academic Press.</p><p><strong>1.1.3 定量pcr估计基因组大小的例子：</strong></p><p>Wilhelm, J., A. Pingoud, et al. (2003). &quot;Real-time PCR-based method for the estimation of genome sizes.&quot; Nucleic Acids Res 31(10): e56.</p><p>Jeyaprakash, A. and M. A. Hoy (2009). &quot;The nuclear genome of the phytoseiid Metaseiulus occidentalis (Acari: Phytoseiidae) is among the smallest known in arthropods.&quot; Exp Appl Acarol 47(4): 263-273.</p><p><strong>1.1.4 Kmer估计基因组大小的例子：</strong></p><p>Kim, E. B., X. Fang, et al. (2011). &quot;Genome sequencing reveals insights into physiology and longevity of the naked mole rat.&quot; Nature 479(7372): 223-227.</p><h3><a name='header-n28' class='md-header-anchor '></a>1.2 杂合度估计</h3><p>杂合度对基因组组装的影响主要体现在不能合并姊妹染色体，杂合度高的区域，会把两条姊妹染色单体都组装出来，从而造成组装的基因组偏大于实际的基因组大小。</p><p>一般是通过SSR在测序亲本的子代中检查SSR的多态性。杂合度如果高于0.5%，则认为组装有一定难度。杂合度高于1%则很难组装出来。</p><p>杂和度估计一般通过kmer分析来做，这里有一个例子：</p><p><a href='http://www.nature.com/nature/journal/vaop/ncurrent/full/nature11413.html' target='_blank' >http://www.nature.com/nature/journal/vaop/ncurrent/full/nature11413.html</a></p><p>降低杂合度可以通过很多代近交来实现。</p><p>杂合度高，并不是说组装不出来，而是说，装出来的序列不适用于后续的生物学分析。比如拷贝数、基因完整结构。</p><h3><a name='header-n41' class='md-header-anchor '></a>1.3 是否有遗传图谱可用</h3><p>随着测序对质量要求越来越高和相关技术的逐渐成熟，遗传图谱也快成了denovo基因组的必须组成。构建遗传图构建相关概念可以参考这本书（The handbook of plant genome mapping: genetic and physical mapping ）</p><h3><a name='header-n44' class='md-header-anchor '></a>1.4 生物学问题的调研</h3><p>这一步也是很重要的</p><h2><a name='header-n47' class='md-header-anchor '></a>2. 测序样品准备</h2><p>确定第一步没问题，就意味着这个物种是可以尝试测序的。测序样品对一些物种也是很大问题的，某些物种取样本身就是一个挑战的问题。</p><p>基因组测序用的样品最好是来自于同一个个体，这样可以降低个体间的杂和对组装的影响。大片段对此无要求。</p><h2><a name='header-n52' class='md-header-anchor '></a>3. 测序策略的选择</h2><p>一般都是用不同梯度的插入片段来测序，小片段（200,500,800）和大片段（1k, 2kb 5kb 10kb 20kb 40kb）。如果是杂合度高和重复序列较多的物种，可能要采取fosmid-by-fosmid或者fosmid pooling的策略。</p><p>不言而喻，后者花费是相当高的。</p><h2><a name='header-n57' class='md-header-anchor '></a>4. 基因组组装</h2><h3><a name='header-n58' class='md-header-anchor '></a>4.1 组装相关综述：</h3><p>Li, Z., Y. Chen, et al. (2012). &quot;Comparison of the two major classes of assembly algorithms: overlap-layout-consensus and de-bruijn-graph.&quot; Brief Funct Genomics 11(1): 25-37.</p><p>Treangen, T. J. and S. L. Salzberg (2012). &quot;Repetitive DNA and next-generation sequencing: computational challenges and solutions.&quot; Nat Rev Genet 13(1): 36-46.</p><p><a href='http://www.cbcb.umd.edu/research/assembly_primer.shtml' target='_blank' >http://www.cbcb.umd.edu/research/assembly_primer.shtml</a></p><p>Schatz, M. C., J. Witkowski, et al. (2012). &quot;Current challenges in de novo plant genome sequencing and assembly.&quot; Genome Biol 13(4): 243</p><p>Baker, M. (2012). &quot;De novo genome assembly: what every biologist should know.&quot; Nat Methods 9(4): 333-337. （重点推荐）</p><p>Compeau, P. E., et al. (2011). &quot;How to apply de Bruijn graphs to genome assembly.&quot; Nat Biotechnol 29(11): 987-991.</p><p>Birney, E. (2011). &quot;Assemblies: the good, the bad, the ugly.&quot; Nat Methods 8(1): 59-60.</p><p>Schatz, M. C., et al. (2010). &quot;Assembly of large genomes using second-generation sequencing.&quot; Genome Res 20(9): 1165-1173.</p><h3><a name='header-n75' class='md-header-anchor '></a>4.2 纠错软件：</h3><p>Kelley, D. R., M. C. Schatz, et al. (2010). &quot;Quake: quality-aware detection and correction of sequencing errors.&quot; Genome Biol 11(11): R116.</p><h3><a name='header-n78' class='md-header-anchor '></a>4.3 组装软件比较</h3><p>Salzberg, S. L., A. M. Phillippy, et al. (2012). &quot;GAGE: A critical evaluation of genome assemblies and assembly algorithms.&quot; Genome Res 22(3): 557-567.</p><p>Zhang, W., et al. (2011). &quot;A practical comparison of de novo genome assembly software tools for next-generation sequencing technologies.&quot; PLoS One 6(3): e17915.</p><p>Narzisi, G. and B. Mishra (2011). &quot;Comparing de novo genome assembly: the long and short of it.&quot; PLoS One 6(4): e19175.</p><p>Lin, Y., et al. (2011). &quot;Comparative Studies of de novo Assembly Tools for Next-generation Sequencing Technologies.&quot; Bioinformatics.</p><p>Hayden, E. C. (2011). &quot;Genome builders face the competition.&quot; Nature 471(7339): 425.</p><p>Finotello, F., et al. (2011). &quot;Comparative analysis of algorithms for whole-genome assembly of pyrosequencing data.&quot; Brief Bioinform.</p><p>Earl, D. A., et al. (2011). &quot;Assemblathon 1: A competitive assessment of de novo short read assembly methods.&quot; Genome Res.</p><h3><a name='header-n93' class='md-header-anchor '></a>4.4 组装质量评估</h3><p>Schatz, M. C., et al. (2011). &quot;Hawkeye and AMOS: visualizing and assessing the quality of genome assemblies.&quot; Brief Bioinform.</p><p>Riba-Grognuz, O., et al. (2011). &quot;Visualization and quality assessment of de novo genome assemblies.&quot; Bioinformatics.</p><p>个人见解：</p><p>目前大基因组的denovo组装主流软件还是ALLPATH-LG SOAPdenovo</p><p>ALLPATH-LG的优点是：组装的连续性最好，准确性最好，但是消耗内存较大，不是太好使用</p><p>SOAPdenovo的优点是：速度快，消耗的内存可以接受，组装的连续性还可以，但是错误相对要多一些。</p><p>当然，上述评述并不是在所有情况下的，对不同物种，不同数据，他们的表现可能会不一样。</p><p>基于Overlap-layout的方法的组装软件首推CABOG，这是当年用来组装果蝇基因组的原型。另外，快要发布的MSR-CA貌似也不错，其整合了上述所有软件的优点，来势很猛啊。</p><h2><a name='header-n110' class='md-header-anchor '></a>5. 基因组注释</h2><p>Yandell, M. and D. Ence (2012). &quot;A beginner&#39;s guide to eukaryotic genome annotation.&quot; Nat Rev Genet 13(5): 329-342.</p><h2><a name='header-n113' class='md-header-anchor '></a>6. 基因组可视化</h2><p>Nielsen, C. B., M. Cantor, et al. (2010). &quot;Visualizing genomes: techniques and challenges.&quot; Nat Methods 7(3 Suppl): S5-S15.</p><h2><a name='header-n116' class='md-header-anchor '></a>7. 进化分析</h2><p>Yang, Z. and B. Rannala (2012). &quot;Molecular phylogenetics: principles and practice.&quot; Nat Rev Genet 13(5): 303-314.</p><h2><a name='header-n119' class='md-header-anchor '></a>8. 经典案例</h2><p>Colbourne, J. K., M. E. Pfrender, et al. (2011). &quot;The ecoresponsive genome of Daphnia pulex.&quot; Science 331(6017): 555-561.</p><p>Kim, E. B., X. Fang, et al. (2011). &quot;Genome sequencing reveals insights into physiology and longevity of the naked mole rat.&quot; Nature 479(7372): 223-227.</p><p>Grbic, M., T. Van Leeuwen, et al. (2011). &quot;The genome of Tetranychus urticae reveals herbivorous pest adaptations.&quot; Nature 479(7374): 487-492.</p><p>以上内容转载自：测序中国seq.cn（<a href='http://seq.cn/4607-48597' target='_blank' >http://seq.cn/4607-48597</a>）</p><p>欢迎大家更新补充，参与讨论。</p></div>
+</body>
+</html>

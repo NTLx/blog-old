@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114672259-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114672259-1');
+</script>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>MutMap_Gap.md</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+#write > figure:first-child { margin-top: 16px; }
+figure { overflow-x: auto; margin: -8px 0px 0px -8px; max-width: calc(100% + 16px); padding: 8px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.CodeMirror-line { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background-color: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; background-position: initial initial; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print { 
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > img:only-child { display: block; margin: auto; }
+p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+.md-tag { opacity: 0.5; }
+pre, code, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-print-anchor { border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background-color: transparent !important; text-shadow: initial !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+table tr th { border-bottom-width: 0px; }
+
+
+html {
+	font-size: 19px;
+}
+
+html, body {
+	margin: auto;
+	background: #fefefe;
+}
+body {
+	font-family: "Vollkorn", Palatino, Times;
+	color: #333;
+	line-height: 1.4;
+	text-align: justify;
+}
+#write {
+	max-width: 960px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	line-height: 1.53;
+}
+
+#write>h2:first-child,
+#write>h3:first-child,
+#write>h4:first-child,
+#write>p:first-child{
+	margin-top: 1.2em;
+}
+
+/* Typography
+-------------------------------------------------------- */
+
+#write>h1:first-child,
+h1 {
+	margin-top: 1.6em;
+	font-weight: normal;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	margin-top:2em;
+	font-weight: normal;
+}
+
+h3 {
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 3em;
+}
+
+h1, 
+h2, 
+h3{
+	text-align: center;
+}
+
+h2:after{
+	border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+}
+
+h1+h2, h2+h3 {
+	margin-top: 0.83em;
+}
+
+p,
+.mathjax-block {
+	margin-top: 0;
+	-webkit-hypens: auto;
+	-moz-hypens: auto;
+	hyphens: auto;
+}
+ul {
+	list-style: square;
+	padding-left: 1.2em;
+}
+ol {
+	padding-left: 1.2em;
+}
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+}
+code,
+pre {
+	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-size: .9em;
+	background: white;
+}
+.md-fences{
+	margin-left: 1em;
+	padding-left: 1em;
+	border: 1px solid #ddd;
+	padding-bottom: 8px;
+	padding-top: 6px;
+	margin-bottom: 1.5em;
+}
+
+a {
+	color: #2484c1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+h1 a,
+h1 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+hr {
+	color: #ddd;
+	height: 1px;
+	margin: 2em 0;
+	border-top: solid 1px #ddd;
+	border-bottom: none;
+	border-left: 0;
+	border-right: 0;
+}
+.md-table-edit {
+	background: #ededed;
+    padding-top: 4px;
+}
+table {
+	margin-bottom: 1.333333rem
+}
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.333333rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+table th {
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+
+.task-list{
+	padding:0;
+}
+
+.task-list-item {
+	padding-left: 1.6rem;
+}
+
+.task-list-item input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.33333333rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #fefefe;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+	color: inherit;
+}
+.md-tag {
+	color: inherit;
+	font: inherit;
+}
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+}
+#write pre.md-meta-block {
+	white-space: pre;
+	background: #f8f8f8;
+	border: 0px;
+	color: #999;
+	
+	width: 100vw;
+	max-width: calc(100% + 60px);
+	margin-left: -30px;
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+
+	margin-bottom: 2em;
+	margin-top: -1.3333333333333rem;
+	padding-top: 26px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
+	font-size: 0.9em;
+	font-size: 0.76em;
+	padding-left: 0;
+}
+.md-img-error.md-image>.md-meta{
+	vertical-align: bottom;
+}
+#write>h5.md-focus:before {
+	top: 2px;
+}
+
+.md-toc {
+	margin-top: 40px;
+}
+
+.md-toc-content {
+	padding-bottom: 20px;
+}
+
+.outline-expander:before {
+	color: inherit;
+	font-size: 14px;
+	top: auto;
+	content: "\f0da";
+	font-family: FontAwesome;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  	content: "\f0d7";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: #6A6A6A;
+}
+
+.html-for-mac #typora-sidebar {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
+}
+
+.typora-node .file-list-item-parent-loc, 
+.typora-node .file-list-item-time, 
+.typora-node .file-list-item-summary {
+	font-family: arial, sans-serif;
+}
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac show-fences-line-number'><p><strong><em><a href='https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12369'>MutMap-Gap：突变体F2后代群体的全基因组重测序与gap区域的de novo组装确定了稻瘟病抗性基因Pii</a></em></strong></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n250"><a class="md-toc-inner" style="" href="#header-n250">Summary</a></span><span class="md-toc-item md-toc-h1" data-ref="n17"><a class="md-toc-inner" style="" href="#header-n17">Introduction</a></span><span class="md-toc-item md-toc-h1" data-ref="n24"><a class="md-toc-inner" style="" href="#header-n24">Materials and Methods</a></span><span class="md-toc-item md-toc-h2" data-ref="n25"><a class="md-toc-inner" style="" href="#header-n25">Constructing the Hitomebore ‘reference sequence’ based on the Nipponbare ‘reference genome’</a></span><span class="md-toc-item md-toc-h2" data-ref="n31"><a class="md-toc-inner" style="" href="#header-n31">WGS of bulked DNA from F2 progeny and MutMap analysis</a></span><span class="md-toc-item md-toc-h2" data-ref="n57"><a class="md-toc-inner" style="" href="#header-n57"><em>De novo</em> assembly</a></span><span class="md-toc-item md-toc-h2" data-ref="n60"><a class="md-toc-inner" style="" href="#header-n60">Mutant screen</a></span><span class="md-toc-item md-toc-h1" data-ref="n63"><a class="md-toc-inner" style="" href="#header-n63">Results</a></span><span class="md-toc-item md-toc-h2" data-ref="n64"><a class="md-toc-inner" style="" href="#header-n64">The principle of MutMap-Gap</a></span><span class="md-toc-item md-toc-h2" data-ref="n90"><a class="md-toc-inner" style="" href="#header-n90">MutMap-Gap identifies rice <em>Pii</em>, a blast resistance gene</a></span><span class="md-toc-item md-toc-h1" data-ref="n213"><a class="md-toc-inner" style="" href="#header-n213">Discussion</a></span><span class="md-toc-item md-toc-h1" data-ref="n218"><a class="md-toc-inner" style="" href="#header-n218">References</a></span></p></div><h1><a name='header-n250' class='md-header-anchor '></a>Summary</h1><ol start='' ><li>MutMap等方法可以利用高通量测序鉴定突变表型的casual mutation，但当测序样本与参考基因有较大Structure Variation（SV）时，参考基因组中缺失的那部分区域（gap reign）产生的突变不能通过简单比对来确定；</li><li>本文提出的“MutMap-Gap”方法先利用MutMap方法得到一个候选区间，然后进行<em>de novo</em>组装、比对，最后鉴定gap内的突变；</li><li>本文利用MutMap-Gap方法在水稻栽培种Hitomebore突变系中分离出稻瘟病抗性基因<em>Pii</em>（突变为<em>Pii</em>基因功能缺失）；</li><li>MutMap-Gap应该可用于克隆显示出显着结构变异的基因，如核苷酸结合位点 - 富含亮氨酸重复序列（NBS-LRR）类的疾病抗性基因。</li></ol><h1><a name='header-n17' class='md-header-anchor '></a>Introduction</h1><p>DNA测序技术的发展使植物的全基因组测序（whole genome sequencing，WGS）成为常规。WGS的应用之一是识别causative mutations responsible for mutant phenotypes of interest。（截至该文）已有一系列方法产生，包括SHOREmap（<a href='#ref1'>Schneeberger等，2009</a>），NGM（<a href='#ref2'>Austin等，2011</a>）和MutMap（<a href='#ref3'>Abe等，2012</a>）。</p><p>在MutMap中，将具有关注表型的隐性突变体与所有亲本进行杂交，并将来自突变F2子代的多个个体的DNA进行混池测序。产生的short-reads与为亲本系构建的“reference sequence”比对，并且该比对的结果用于推断负责该表型的casual mutation在基因组的位置。</p><p>MutMap的先决条件是跨越致病突变的基因组片段存在于亲代参考序列中。然而，这是不能保证的，因为亲本系参考序列是基于代表品种/品系的参考基因组构建的，例如水稻中的日本晴栽培种（Oryza sativa）和拟南芥（Col）。这是通过对亲本品系基因组重新测序并在两行之间检测到的所有单核苷酸多态性（single nucleotide polymorphism，SNP）位置处将亲代品系的核苷酸置换为“参考基因组”的核苷酸来完成的。因此，当与“参考基因组”相比时，MutMap不能鉴定位于亲本特定基因组区域（缺口）内的突变。为了鉴定这些gap区域中的突变，作者引入了MutMap-Gap、MutMap和基因组gap区域的靶向装配组合。</p><h1><a name='header-n24' class='md-header-anchor '></a><span id="methods">Materials and Methods</span></h1><h2><a name='header-n25' class='md-header-anchor '></a>Constructing the Hitomebore ‘reference sequence’ based on the Nipponbare ‘reference genome’</h2><blockquote><p>基于Nipponbare“参考基因组”构建Hitomebore“参考序列”</p></blockquote><p>为了产生Hitomebore亲本“参考序列”，作者准备了用Illumina（San Diego，CA，USA）测序获得的12.25Gb Hitomebore野生型（WT）亲本序列和日本晴BWE（<a href='#ref4'>Li＆Durbin，2009</a>）的<a href='http://rapdblegacy.dna.affrc.go.jp/download/index.html'>参考基因组</a>（<a href='#ref3'>Abe等，2012</a>）。 Hitomebore“参考序列”是通过在两个栽培品种间鉴定的124 968个SNP位点处用Hitomebore替换Nipponbare核苷酸而构建的。</p><h2><a name='header-n31' class='md-header-anchor '></a>WGS of bulked DNA from F2 progeny and MutMap analysis</h2><blockquote><p>F2子代混池测序和MutMap分析</p></blockquote><p>如之前所述（<a href='#ref3'>Abe等，2012</a>），通过使从突变F2个体的叶提取的DNA膨胀来制备DNA样品。Illumina GAIIx测序文库使用5μg DNA样品。使用BWA软件将reads与Hitomebore的参考序列进行比对（<a href='#ref4'>Li＆Durbin，2009</a>）。比对文件使用SAMtools转换为SAM/BAM文件（<a href='#ref5'>Li等，2009</a>），并且对齐的短读取由Coval过滤（<a href='https://sourceforge.net/projects/coval105/'>Shunichi Kosugi等</a>）以提高SNP calling的准确性。如前所述计算SNP指数（<a href='#ref3'>Abe等，2012</a>）。滑窗分析采用4 Mb窗口大小和10 kb增量。细节在附加信息中给出，图S1。</p><p><span id="figS1a"><a href='https://gyazo.com/af3c5ed0181411b1fefdcdc616ed5aee'><img src='https://i.gyazo.com/af3c5ed0181411b1fefdcdc616ed5aee.png' alt='图S1 a' /></a></span></p><blockquote><p>图S1 a | Flow chart of MutMap-Gap.</p></blockquote><p><span id="figS1b"><a href='https://gyazo.com/0b97a782bba76721782e87ad3bf4e652'><img src='https://i.gyazo.com/0b97a782bba76721782e87ad3bf4e652.png' alt='图S1 b' /></a></span></p><blockquote><p>图S1 b | Simulation test for null distribution in MutMap-Gap.
+Flow chart showing the simulation test for null distribution.</p></blockquote><p><span id="figS1cd"><a href='https://gyazo.com/8be58b140d5ef2e00c12882a9e7c0a53'><img src='https://i.gyazo.com/8be58b140d5ef2e00c12882a9e7c0a53.png' alt='图S1 c,d' /></a></span></p><blockquote><p>图S1 c,d | 基于10000次重复的每个读取深度的模拟测试结果。
+x轴和y轴分别代表读取深度和SNP指数；
+绿色和黄色线分别代表null distribution的95和99％的置信区间。
+（c）模拟混池的17个突变F2子代的结果，对应于正文中描述的Hit5948和Hitomebore野生型之间的杂交的后代；
+（d）模拟24个突变F2子代的结果，并且对应于正文中描述的Hit6780和Hitomebore野生型之间的杂交后代。</p></blockquote><h2><a name='header-n57' class='md-header-anchor '></a><em>De novo</em> assembly</h2><p>使用Mate Pair文库（Illumina）做Hitomebore WT的contig scaffolding，并使用<a href='http://www.clcbio.com'>CLC</a>软件进行<em>de novo</em>组装。产生的contigs用SSPACE（<a href='#ref6'>Boetzer等，2011</a>）生成scaffold。</p><h2><a name='header-n60' class='md-header-anchor '></a>Mutant screen</h2><p>使用由甲基磺酸乙酯（EMS）诱变产生的共计3033个Hitomebore突变系，作者用携带AVR-Pii的稻瘟病真菌Magnaporthe oryzae分离株TH68-126（种系033.1）（<a href='$ref7'>Yoshida等，2009</a>）进行喷雾接种试验，并与野生亲本<em>Pii</em>区分。</p><h1><a name='header-n63' class='md-header-anchor '></a>Results</h1><h2><a name='header-n64' class='md-header-anchor '></a>The principle of MutMap-Gap</h2><p>MutMap-Gap是一种基于WGS的方法，用于鉴定参考基因组缺失的基因组区域中突变表型的致病性SNP。MutMap-Gap将先前报道的MutMap方法（<a href='#ref3'>Abe等，2012</a>）与<em>de novo</em> assembly的gap填充相结合。本文使用水稻作为研究对象，鉴定如图1和2所述的组装的gap区域中影响表型的致病突变。</p><p><span id="fig1"><a href='https://gyazo.com/69e651d3883ed45404c5c48151d8eb18'><img src='https://i.gyazo.com/69e651d3883ed45404c5c48151d8eb18.png' alt='图1' /></a></span></p><blockquote><p>图1 | MutMap方法不能鉴定参考基因组中缺失信息区域内的突变。
+（a）亲本P测序后与公开的参考基因组（绿色）比对，P特有的不能比对上的基因组区域保留为未比对区（红色）；P与参考基因组之间的SNP在比对和鉴定之后，将P的SNP位点碱基替换到对应的参考基因组位置上。
+（b）EMS诱变产生的突变用黄色表示（突变亲本M），黄色星号表示造成突变表型的致病突变；对于MutMap分析，将M与P回交，得到表型分离的F2，将子代2种表型至少各20株混池测序，然后与“参考序列”比对。
+（c）计算所有SNP-index并绘图，若casual mutation位于P特异的基因组区域内，MutMap方法本身是无法识别的。</p></blockquote><p><span id="fig2"><a href='https://gyazo.com/5d81905b9dd00798b6262e843ff84e6a'><img src='https://i.gyazo.com/5d81905b9dd00798b6262e843ff84e6a.png' alt='图2' /></a></span></p><blockquote><p>图2 | MutMap-Gap用<em>de novo</em>测序填补MutMap中“参考序列”的空白区域（即P特有的基因组区域）
+（a）使用图1a所示步骤中得到的未比对区域和图1c得到的定位目标区域测序数据，进行<em>de novo</em>组装以构建目标区间的序列；组合<em>de novo</em>产生的scaffold与“参考序列”，成为新的“P+scaffold”参考基因组。
+（b）F2突变型的测序数据与“P+scaffold”参考基因组比对，SNP-index为1的位点可能含有突变表型相关的SNP。</p></blockquote><p>首先，通过用化学诱变剂如EMS诱变亲本栽培种“P”来开发突变品系“M”。鉴于P与Ref的不同之处，首先需要生成P基因组的“参考序列”。为此，作者对P进行测序并将数据与Ref基因组进行比对。在这一步之后，根据Ref基因组与P基因组的差异“修正”参考基因组（即所有SNP位置P到Ref的碱基替换）（<a href='#fig1'>图1a</a>），生成后续使用的“参考序列”。虽然从P获得的大部分序列能和Ref比对上，但从P特异性基因组区域获得的序列不能比对上，因此被归为未比对的序列。</p><p>作者假设感兴趣的突变位于M的P特异基因组区域（<a href='#fig1'>图1b</a>）。此时，由于该区域未在原本的参考基因组中，所以简单的讲M序列与参考基因组比对并不能鉴定相关SNP。但是，这种区域是可以通过<em>de novo</em>组装来恢复的。为此，作者先利用MutMap确定候选区间：M与P回交产生F2子代，子代2种表型各混20株进行测序，然后将子代池的测序数据与P“参考序列”（<a href='#fig1'>图1b</a>）比对，计算每个SNP位置的SNP-index并作图以找出SNP-index与染色体位置之间的关系。预计越接近影响突变的区域SNP-index越高（接近1），未连锁的区域SNP-index为0.5。然而，由于候选区间位于gap区内，因此不可能仅通过MutMap鉴定相关突变（<a href='#fig1'>图1c</a>）。</p><p>为了定位位于gap区的突变，作者用<em>de novo</em> assembly在MutMap定位的区间（<a href='#fig2'>图2</a>）内重建P“参考序列”。作者利用两种数据进行<em>de novo</em>组装：与MutMap目标区间比对上的区域和无法与Ref基因组比对上（之前归类为未比对的部分）的reads（<a href='#fig2'>图2a</a>）。</p><p>最后，将F2突变池的测序数据与“P+scaffold”参考序列（<a href='#fig2'>图2b</a>)比对，计算SNP-index，值为1的便是casual mutation候选。</p><h2><a name='header-n90' class='md-header-anchor '></a>MutMap-Gap identifies rice <em>Pii</em>, a blast resistance gene</h2><p>作为证明，作者将MutMap-Gap应用于稻瘟病抗性（R）基因<em>Pii</em>的鉴定。稻瘟病是一种由子囊菌病原体M. oryzae引起的破坏性强且传播广泛的疾病，在全球范围内造成了显著的产量损失。为了有效地进行稻瘟病抗性标记辅助育种，R基因的鉴定很重要。<em>Pii</em>赋予水稻抵抗携带相应<em>AVR-Pii</em>基因的病原体的抗性。水稻亚种的完整基因组序列日本粳稻Nipponbare于2005年出版（<a href='#ref8'>国际水稻基因组测序项目，2005年</a>）。然而，Nipponbare已知缺乏<em>Pii</em>，表明该品种不能直接用于克隆<em>Pii</em>基因。</p><p>为了分离<em>Pii</em>，作者使用含有<em>Pii</em>基因的Hitomebore品种。利用Hitomebore的全基因组重测序，基于Nipponbare基因组序列构建Hitomebore“参考序列”，在这两个栽培品种之间鉴定的所有SNP（124 968个）处用Hitomebore的核苷酸取代Nipponbare核苷酸（<a href='#methods'>参见Methods</a>）。在389Mb日本晴基因组中，测序产生的10.71Gb数据覆盖了358Mb（92％），平均27.5×（<a href='#tableS1'>表S1</a>）。总共251Mb的区域未被比对到Nipponbare参考基因组序列。这些reads可能来自未在日本晴基因组中表示的Hitomebore特异性基因组区域。</p><p><span id="tableS1"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-010130.png' alt='表S1' /></span></p><blockquote><p>表S1 | Summary of Illumina GAIIx sequencing and alignment data.
+（a）分析中滤掉了超过10%的序列（&lt;Q30），且只有PE reads用于比对；
+（b）去除PCR重复；
+（c）Hitomebore数据与日本晴参考基因组（IRGSP build 5）进行比对；
+（d）两个突变体产生的数据与Hitomebore“参考序列”对齐，Hitomebore“参考序列”是通过用Nipponbare替换Hitomebore SNP而开发的。</p></blockquote><p>为了鉴定已失去<em>Pii</em>功能的Hitomebore突变体，作者在表达<em>AVR-Pii</em>（<a href='$ref7'>Yoshida等，2009</a>）且与blast race 033.1不相容的总共3033个EMS诱变的Hitomebore系中进行了喷雾接种试验（<a href='#fig3'>图3a</a>）。作者鉴定了两个独立的<em>Pii</em>缺陷候选突变体，Hit5948和Hit6780，其在接种033.1后表现出易感表型（<a href='#fig3'>图3b</a>）。为了通过MutMap来定位casual mutation，作者独立地将两个突变体回交到Hitomebore WT并产生两组F2子代。Hit5948×WT F2子代分离61个WT和17个突变体表型，而Hit6780×WT F2子代分离88个WT和24个突变体表型。综合这两种情况，分离比符合3:1（χ2 = 0.43, ns for Hit5948 × WT F2; χ2 = 0.76, ns for Hit6780 × WT F2），表明两种突变体的表型由单一隐性突变控制（<a href='#fig3'>图3c</a>）。</p><p><span id="fig3"><a href='https://gyazo.com/b0a8ed336a3d7986ca971c17c95d970a'><img src='https://i.gyazo.com/b0a8ed336a3d7986ca971c17c95d970a.png' alt='图3' /></a></span></p><blockquote><p>图3 | MutMap揭示了含有Hit5984和Hit6780的候选突变的基因组区域，两个水稻突变体已经失去了Pii抗性。
+（a）通过接种稻瘟病从3033株EMS突变系中筛选抗性反应。
+（b）Hitomebore含有Pii R基因，因此显示出对米曲霉分离菌033.1的抗性，而两种突变体Hit5948和Hit6780易感，表明它们已经丧失了Pii抗性。
+（c）将两种突变体回交到Hitomebore野生型获得抗性（野生型）和易感（突变型）表型，集合两种子代后，统计分离比为3:1，表明表型为单个隐性基因控制；接种稻瘟病评估抗性反应。
+（d）MutMap和MutMap-Gap组合分析产生针对9号染色体的两种突变体的SNP-index图；蓝点表示该位置SNP-index；红线表示10Mb增量的4Mb大小的窗口内平均SNP-index；绿线表示SNP-index=0.5的零假设下SNP-index 的95%置信线；灰色的染色体区域为可能包含casual mutation的基因组区域。</p></blockquote><p>对于MutMap分析，作者将突变体F2子代的DNA（Hit5984的17个个体和Hit6780的24个个体）混池，并进行WGS。测序策略为PE 75bp，分别获得了来自Hit5948和Hit6780突变体F2的DNA样本的2.45和2.87 Gbp数据（<a href='#tableS1'>表S1</a>）。这些数据与Hitomebore“参考序列”比对并鉴定SNP。对于所有的SNP位点，计算SNP-index并生成关于SNP位置和SNP-index的图形用于进一步分析（<a href='#fig3'>图3d</a>，<a href='#figS2'>S2</a>）。</p><blockquote><p><span id="figS2">图S2</span> | 混池DNA使用MutMap方法分析时，在无选择压力的零假设下绘制置信区间的SNP-index点图。红线表示滑动窗口（平均4Mb区间10Kb增量）。绿色和黄色线分别表示95％和99％置信区间。</p></blockquote><p><span id="figS2a"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-013243.png' alt='图S2 a' /></span></p><blockquote><p>图S2 a | MutMap analysis of Hit5948.</p></blockquote><p><span id="figS2b"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-013403.png' alt='图S2 b' /></span></p><blockquote><p>图S2 b | MutMap analysis of Hit6780.</p></blockquote><p>应用于Hit5948的MutMap显示出9号染色体上7.88至11.98Mb区间中的SNP-index峰。在候选区中鉴定出SNP指数为1的4个SNP中，SNP-10290916定位于<em>Os09t0327600-01</em>基因的第二外显子（在日本晴基因组中预测的，<a href='#tableS2'>表S2</a>）。该SNP代表无义突变，导致在第226位氨基酸残基处从Trp（TGG）至终止密码子（TGA）的氨基酸改变。<em>Os09t0327600-01</em>编码具有核苷酸结合位点和富含亮氨酸重复序列（NBS-LRR）结构域的蛋白质，两者在植物抗性基因中都是保守的（<a href='#ref9'>Zhou等，2004</a>; <a href='#ref10'>Jones＆Dangl，2006</a>）。来自日本晴的<em>Os09t0327600-01</em>数据表明，该基因编码（可能不起作用的）截短的R蛋白。因此，作者推测Hitomebore中的<em>Os09t0327600-01</em>同源物作为<em>Pii</em>起作用，并且Nipponbare缺乏功能性<em>Pii</em>。</p><p><span id="tableS2"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-014750.png' alt='表S2' /></span></p><blockquote><p>表S2 | 在Hit5948突变体和野生型序列之间统计学显著（Fisher&#39;s exact test: P&lt;0.05）差异的区域内SNP-index为1的候选SNP。
+（a）The sequence reads与该研究中开发的“参考序列”比对。</p></blockquote><p>使用MutMap进行的类似分析应用于Hit6780，鉴定出候选基因组区域，其可能在第9号染色体上的7.18至13.05Mb区间中具有致病突变，该区域与Hit5948的casual mutation所定位的区域相同。尽管在该区域中鉴定了SNP指数为1的10个SNP，但没有一个代表非同义突变，并且在Hit5948的候选基因<em>Os09t0327600-01</em>中没有检测到SNP（<a href='#tableS3'>表S3</a>）。作者假设Hit6780的致病突变位于Hitomebore特定的基因组区域（<a href='#fig4'>图4 a</a>）。</p><p><span id="tableS3"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-020210.png' alt='表S3' /></span></p><blockquote><p>表S3 | 在Hit6780突变体和野生型序列之间统计学显著（Fisher&#39;s exact test: P&lt;0.05）差异的区域内SNP-index为1的候选SNP。
+（a）The sequence reads与该研究中开发的“参考序列”比对。</p></blockquote><p><span id="fig4"><a href='https://gyazo.com/1bdd9ebd8290fe67b2112e50cdff25ed'><img src='https://i.gyazo.com/1bdd9ebd8290fe67b2112e50cdff25ed.png' alt='图4' /></a></span></p><blockquote><p>图4 | MutMap-Gap鉴定Hit6780的casual mutation。
+（a）Integrative Genomics Viewer（IGV）快照显示的是Nipponbare参考基因组中9号染色体的10 289 000–10 293 000区域，这是由WT测序数据提供的Os09t0327600-01基因区域（预测的候选基因区域）；测序数据仅覆盖该基因的部分预测外显子区域。
+（b）IGV快照显示的是预测的HIT7基因区域，数据由<em>de novo</em>组装产生的scaffold 7提供；a图中HIT7编码区（第二外显子）的阴影区域与Os09t0327600-01区域显示出&gt; 95％的相似性；红色箭头指示Hit5948（左侧；位置1783）和Hit6780（右侧；位置2567）中候选突变的位置；Hit5984突变的基因组位置在Hitomebore和Nipponbare之间保守，而在Hit6780中的位置不保守。
+（c）通过Sanger测序确认候选SNP；将Hit5948（左）和Hit6780（右）突变周围区域的基因组DNA的DNA测序峰色谱与Hitomebore WT比较；箭头表示突变的核苷酸。</p></blockquote><p>为了确定Hit6780的致病突变，作者应用了MutMap-Gap分析，检索了与9号染色体上7.18-13.05 Mb区域相匹配的所有Hitomebore序列reads（4849 550个），并将它们与未比对到Nipponbare基因组的Hitomebore序列reads（3358 005个）组合。将这些组合的reads用于与<a href='http://www.clcbio.com'>CLC</a>软件的<em>de novo</em>组装，并产生总共2239个超过1kb大小的contigs。用SSPACE（<a href='#ref6'>Boetzer等，2011</a>）软件搭建重叠群，使用了46 989 929个PE reads，产生852个最小尺寸为1kb的scaffolds（<a href='#figS3'>图S3</a>）。然后将scaffolds与Hitomebore“参考序列”组合，并用作对比来自Hit6780F2植物的膨大DNA的短读段的参考，如将在MutMap分析中进行的。在产生的852个支架中，只有两个具有SNP指数为1的携带SNP。使用<a href='http://genes.mit.edu/GENSCAN.html'>GENSCAN</a>对两个scaffolds的的基因预测显示，其中一个SNP对应于基因间隔区，另一个在7号scaffold（length = 63 355 bp）的暂时命名为HIT7的基因的剪接连接处（<a href='#figS4'>图S4</a>）。预测这种突变会导致错配的mRNA并引入提前终止密码子（<a href='#figS4'>图S4</a>）。HIT7基因含有NBS-LRR结构域，表明该SNP是Hit6780可能的致病突变。</p><p><span id="figS3"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-021238.png' alt='图S3' /></span></p><blockquote><p>图S3 | Summary of the scaffolding result.
+用illumina mate-pair reads搭建scaffolds。选择总共852个大小超过1kb的scaffolds用于MutMap-Gap分析。红线表示scaffold的N50值。</p></blockquote><p><span id="figS4"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-021356.png' alt='图S4' /></span></p><blockquote><p>图S4 | Confirmation of the splicing error caused by the Hit6780 mutation.
+（a）Pii基因的结构由灰色框（5&#39;和3&#39;UTR），黑色框（外显子）和线（内含子）指示。 倒置的黑色箭头表示Hit6780的突变核苷酸位置。 红色箭头表示用于RT-PCR分析的引物对的位置。 在基因下方提供引物序列。
+（b）RT-PCR结果分别显示Hitomebore野生型和Hit6780的预期的431bp和618bp片段。</p></blockquote><p>作者比较了HIT7的DNA序列和<em>Os09t0327600-01</em>的DNA序列，发现在检测到Hit5948的候选SNP的区域中具有高度相似性（核苷酸同一性97.3％）（<a href='#fig4'>图4</a>）。因此，作者得出结论：Hit5948和Hit6780的致病突变位于同一基因内。常规MutMap分析可以检测到Hit5984突变，该突变定位于Hitomebore的<em>HIT7</em>与Nipponbare的<em>Os09t0327600-01</em>之间的序列相似性非常高的区域，而不是Hit6780的致病SNP。日本晴<em>Os09t0327600-01</em>基因似乎通过截短与蛋白质C末端相对应的区域而丧失了R基因功能（<a href='#fig4'>图4</a>）。</p><p>为了确认Hit5948和Hit6780的易感表型是否由同一基因的突变引起，作者通过将Hit5948与Hit6780杂交的方式进行了等位性测试。正如预期的那样，Hit5948和Hit6780突变杂合的F1植株（<a href='#fig5'>图5 a</a>）的表型对033.1（<a href='#fig5'>图5 b</a>）敏感，证实了Hit5984和Hit6780突变体的表型是由同一基因缺陷引起的（<em>HIT7</em>）。作者进一步测试了总共30个水稻品种中<em>Pii</em>存在或不存在下的表型与区分<em>HIT7</em>和<em>Os09t0327600-01</em>等位基因的裂解扩增多态性序列（cleaved amplified polymorphic sequence，CAPS）标记多态性之间的关联。在<em>Pii</em>表型和CAPS模式之间观察到完全关联，支持将<em>Pii</em>基因鉴定为<em>HIT7</em>（<a href='#figS5'>图S5</a>）。我们因此将<em>HIT7</em>更名为<em>Pii</em>。</p><p><span id="fig5"><a href='https://gyazo.com/3f8b81d0bb2accae02307c3073cf99c9'><img src='https://i.gyazo.com/3f8b81d0bb2accae02307c3073cf99c9.png' alt='图5' /></a></span></p><blockquote><p>图5 | Hit5984和Hit6780突变的等位基因检验（Allelism test）。
+（a）F1植株从Hit5984和Hit6780之间的杂交获得；从F1植株中提取基因组DNA，扩增跨越Hit5984（位置1783）和Hit6780（位置2567）中突变的两个基因组区域并测序；正如预期的那样，F1植物在1783和2567位分别显示T/C和G/A的杂合峰。
+（b）Hitomebore野生型（WT）和F1植株的打孔接种试验的结果；F1植株仍然对033.1敏感，表明Hit5984和Hit6780在同一基因中有缺陷。Bar, 1 cm.</p></blockquote><blockquote><p><span id="figS5">图S5 | <em>Pii</em>表型和CAPS标记多态性之间的关联。</span></p></blockquote><p><span id="figS5a"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-023706.png' alt='图S5 a' /></span></p><blockquote><p>图S5 a | 区分日本晴（<em>Pii</em> -）和Hitomebore（<em>Pii</em> +）等位基因的CAPS标记是基于限制性酶切位点<em>Pvu</em> Ⅱ设计的。</p></blockquote><p><span id="figS5b"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-023909.png' alt='图S5 b' /></span></p><blockquote><p>图S5 b | 30个不同品系中CAPS标记的电泳图。<em>Pvu</em> Ⅱ消化后，有<em>Pii</em>品系（Hitomebore表型）的PCR产物产生了240bp和113bp两条带，缺少<em>Pii</em>的品系（日本晴表型）只产生一条350bp的带。</p></blockquote><p><em>Pii</em>基因由5个外显子组成，跨越起始密码子和终止密码子的3078bp编码序列（编码预测为NBS-LRR型R蛋白的1025个氨基酸的蛋白质，<a href='#figS6'>图S6</a>），这是植物中大多数抗病基因的典型特征（<a href='#ref11'>Belkhadir等，2004</a>; <a href='#ref9'>Zhou等，2004</a>; <a href='#ref12'>McHale等，2006</a>）。</p><blockquote><p><span id="figS6">图S6 | Genomic structure of Pii determined by 5-RACE and 3-RACE PCR.</span></p></blockquote><p><span id="figS6a"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-023939.png' alt='' /></span></p><blockquote><p>图S6 a | 紫色框、红色框和黑色线分别代表<em>Pii</em>基因的5&#39;和3&#39;UTR、外显子和内含子（顶部）。底部显示3078bp编码。</p></blockquote><p><span id="figS6b"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-044929.png' alt='' /></span></p><blockquote><p>图S6 b | <em>Pii</em>的gDNA序列显示5&#39;和3&#39;UTRS（紫色）、外显子（红色）、内含子（黑色）和Hit5948（绿色条）中的突变残基。</p></blockquote><p><span id="figS6c"><img src='http://p5o85qxhq.bkt.clouddn.com/2018-03-19-044955.png' alt='' /></span></p><blockquote><p>图S6 c | 预测<em>Pii</em>编码含有NB-ARC结构域（175-459氨基酸残基）和LRR结构域（581-855氨基酸残基）的1025-aa蛋白质。</p></blockquote><h1><a name='header-n213' class='md-header-anchor '></a>Discussion</h1><p>为保证效果，使用WGS鉴定casual mutation要求有一个高质量的参考基因组可用，如果使用的亲本同参考基因组之间有差异，则有可能致病突变落在差异区间，因不存在于参考基因组中而无法检测。过去会用筛BAC（bacterial artificial chromosome，细菌人工染色体）文库的方法去克隆目标区域，但是这种方法仍然费时费力。MutMap-Gap绕开了这种过程，用更加快速的方法获得这段区域的基因组信息。</p><p>R基因的鉴定对作物抗病标记辅助育种十分重要，主要编码NBS-LRR类蛋白质的R基因具有独特的进化模式，并且代表植物中高度不同的群体（<a href='#ref15'>Clark等，2007</a>）。成功鉴定稻瘟病抗性基因<em>Pii</em>展现了MutMap-Gap用于R基因鉴定的效用。</p><h1><a name='header-n218' class='md-header-anchor '></a>References</h1><p><span id="ref1"><a href='https://www.nature.com/articles/nmeth0809-550'>[1] Schneeberger K, Ossowski S, Lanz C, Juul T, Petersen AH, Nielsen KL, Jørgensen JE, Weigel D, Andersen SU. 2009. SHOREmap: simultaneous mapping and mutation identification by deep sequencing. Nature Methods 8:500–501.</a></span></p><p><span id="ref2"><a href='http://onlinelibrary.wiley.com/doi/10.1111/j.1365-313X.2011.04619.x/abstract'>[2] Austin RS, Vidaurre D, Stamatiou G, Breit R, Provart NJ, Bonetta D, Zhang J, Fung P, Gong Y, Wang PW et al. 2011. Next-generation mapping of Arabidopsis genes. Plant Journal 67: 715–725.</a></span></p><p><span id="ref3"><a href='https://www.nature.com/articles/nbt.2095'>[3] Abe A, Kosugi S, Yoshida K, Natsume S, Takagi H, Kanzaki H, Matsumura H, Yoshida K, Mitsuoka C, Tamiru M et al. 2012. Genome sequencing reveals agronomically important loci in rice using MutMap. Nature Biotechnology 30:174–178.</a></span></p><p><span id="ref4"><a href='https://academic.oup.com/bioinformatics/article/25/14/1754/225615'>[4] Li H, Durbin R. 2009. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics 25: 1754–1760.</a></span></p><p><span id="ref5"><a href='https://academic.oup.com/bioinformatics/article/25/16/2078/204688'>[5] Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, Durbin R, 1000 Genome Project Data Processing Subgroup. 2009. The sequence alignment/map format and samtools. Bioinformatics 25:2078–2079.</a></span></p><p><span id="ref6"><a href='https://academic.oup.com/bioinformatics/article/27/4/578/197626'>[6] Boetzer M, Henkel CV, Jansen HJ, Butler D, Pirovano W. 2011. Scaffolding pre-assembled contigs using SSPACE. Bioinformatics 27: 578–579.</a></span></p><p><span id="ref7"><a href='http://www.plantcell.org/content/21/5/1573'>[7] Yoshida K, Saitoh H, Fujisawa S, Kanzaki H, Matsumura H, Yoshida K, Tosa Y, Chuma I, Takano Y, Win J et al. 2009. Association genetics reveals three novel avirulence genes from the rice blast fungal pathogen Magnaporthe oryzae. Plant Cell 21: 1573–1591.</a></span></p><p><span id="ref8"><a href='https://www.nature.com/articles/nature03895'>[8] International Rice Genome Sequencing Project. 2005. The map‐based sequence of the rice genome. Nature 436: 793–800.</a></span></p><p><span id="ref9"><a href='https://link.springer.com/article/10.1007%2Fs00438-004-0990-z'>[9] Zhou T, Wang Y, Chen JQ, Araki H, Jing Z, Jiang K, Shen J, Tian D. 2004. Genome‐wide identification of NBS genes in japonica rice reveals significant expansion of divergent non‐TIR NBS‐LRR genes. Molecular Genetics and Genomics 271: 402–405.</a></span></p><p><span id="ref10"><a href='https://www.nature.com/articles/nature05286'>[10] Jones JDG, Dangl JL. 2006. The plant immune system. Nature 444: 323–329.</a></span></p><p><span id="ref11"><a href='https://www.sciencedirect.com/science/article/pii/S1369526604000755?via%3Dihub'>[11] Belkhadir Y, Subramaniam R, Dangl JL. 2004. Plant disease resistance protein signaling: NBS‐LRR proteins and their partners. Current Opinion in Plant Biology 7: 391–399.</a></span></p><p><span id="ref12"><a href='https://genomebiology.biomedcentral.com/articles/10.1186/gb-2006-7-4-212'>[12] McHale L, Tan X, Koehl P, Wichelmore RW. 2006. Plant NBS‐LRR proteins: adaptable guards. Genome Biology 7: 212.</a></span></p><p><span id="ref15"><a href='http://science.sciencemag.org/content/317/5836/338'>[13] Clark RM, Schweikert G, Toomajian C, Ossowski S, Zeller G, Shinn P, Warthmann N, Hu TT, Fu G, Hinds DA et al. 2007. Common sequence polymorphisms shaping genetic diversity in Arabidopsis thaliana. Science 317: 338–342.</a></span></p></div>
+</body>
+</html>
