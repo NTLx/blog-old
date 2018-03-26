@@ -1,175 +1,179 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/</loc>
+        <loc>https://ntlx.github.io/blog/</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/7_habbits_of_Highly_Effective_People_part1.html</loc>
+        <loc>https://ntlx.github.io/blog/Docker_Wordpress.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/Docker_Wordpress.html</loc>
+        <loc>https://ntlx.github.io/blog/EndNote_Insert.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/EndNote_Insert.html</loc>
+        <loc>https://ntlx.github.io/blog/EndNote_Reference.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/EndNote_Reference.html</loc>
+        <loc>https://ntlx.github.io/blog/EndNoteX8_Introduction.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/EndNoteX8_Introduction.html</loc>
+        <loc>https://ntlx.github.io/blog/formula.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/formula.html</loc>
+        <loc>https://ntlx.github.io/blog/GCE.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/GCE.html</loc>
+        <loc>https://ntlx.github.io/blog/Genome_Assembly_study.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/Genome_Assembly_study.html</loc>
+        <loc>https://ntlx.github.io/blog/Git_study.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/Git_study.html</loc>
+        <loc>https://ntlx.github.io/blog/Markdown_inside_reference.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/Markdown_inside_reference.html</loc>
+        <loc>https://ntlx.github.io/blog/Markdown_Introduction.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/Markdown_Introduction.html</loc>
+        <loc>https://ntlx.github.io/blog/Markdown_tips.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/Markdown_tips.html</loc>
+        <loc>https://ntlx.github.io/blog/Papers/MBS/MutMap_Gap.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/SAM_file_FLAG.html</loc>
+        <loc>https://ntlx.github.io/blog/SAM_file_FLAG.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/SAM_file_format.html</loc>
+        <loc>https://ntlx.github.io/blog/SAM_file_format.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/Pubmed_IF_filter.html</loc>
+        <loc>https://ntlx.github.io/blog/Shadowsocks_Fake_Manual.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/1.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/Pubmed_IF_filter.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/10.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/1.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/11.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/10.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/12.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/11.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/13.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/12.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/14.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/13.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/15.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/14.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/15.html</loc>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/16.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/16.html</loc>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/17.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/17.html</loc>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/18.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/18.html</loc>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/19.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/19.html</loc>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/2.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/2.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/20.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/20.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/21.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/21.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/3.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/3.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/4.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/4.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/5.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/5.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/6.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/6.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/7.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/7.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/8.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/8.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/9.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/9.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/Brief_Medicinal_Plant_Iso-seq</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/Brief_Medicinal_Plant_Iso-seq</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/ISAG_2017_news.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/ISAG_2017_news.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/Koala_Genome_Assembly.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/Koala_Genome_Assembly.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/Long_Read_Sequencing_Iso-seq.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/Long_Read_Sequencing_Iso-seq.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/SMRT_Sequencing_HLA.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/SMRT_Sequencing_HLA.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://lx3325360.gitee.io/lx_blog/WeChat_Article/TGS/TGS_index.html</loc>
+        <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/TGS_index.html</loc>
         <priority>0.2</priority>
     </url>
 </urlset>
