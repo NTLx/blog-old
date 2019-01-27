@@ -13154,7 +13154,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;../作业3/酒店数据1.xlsx&#39;</span><span class="p">)</span>
@@ -13452,10 +13452,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;价格&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;价格&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13468,7 +13468,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13503,565 +13503,15 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>283</th>
-      <td>香港经济型酒店  (家庭旅馆)(Hong Kong Budget Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D8&amp; E2室</td>
-      <td>2.000000</td>
-      <td>29.0</td>
-      <td>67.0</td>
-    </tr>
-    <tr>
-      <th>285</th>
-      <td>巴黎旅馆(Paris Guest House (D2, 10/F))</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>Flat D2, 10/F, Block D, Chungking Mansion, 40 ...</td>
-      <td>2.000000</td>
-      <td>5.0</td>
-      <td>67.0</td>
-    </tr>
-    <tr>
-      <th>376</th>
-      <td>香港日夜宾馆(Day and Night Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D8&amp; E2室</td>
-      <td>3.300000</td>
-      <td>63.0</td>
-      <td>68.0</td>
-    </tr>
-    <tr>
-      <th>194</th>
-      <td>香港加尔文青年旅舍(HK HOSTEL)</td>
-      <td>青年旅舍</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>佐敦道13-15号华丰大厦7楼A室</td>
-      <td>4.200000</td>
-      <td>1480.0</td>
-      <td>70.0</td>
-    </tr>
-    <tr>
-      <th>328</th>
-      <td>80后潘多拉旅馆(香港佐敦店)(原华丰宾馆)(Pandora After 80s Jordan)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙佐敦佐敦道15号华丰大厦1字楼H室</td>
-      <td>3.100000</td>
-      <td>36.0</td>
-      <td>70.0</td>
-    </tr>
-    <tr>
-      <th>345</th>
-      <td>香港德国旅舍Germany Hostel(Germany Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D8&amp; E2室</td>
-      <td>3.300000</td>
-      <td>46.0</td>
-      <td>71.0</td>
-    </tr>
-    <tr>
-      <th>294</th>
-      <td>香港时尚酒店(尖沙咀店)(Smart Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀金巴利道27-33号永利大厦6楼D</td>
-      <td>4.300000</td>
-      <td>78.0</td>
-      <td>71.0</td>
-    </tr>
-    <tr>
-      <th>272</th>
-      <td>香港万达青年旅舍(Master Inn)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港油尖旺区九龙旺角亚皆老街83号先施大厦15字楼1507室</td>
-      <td>4.500000</td>
-      <td>135.0</td>
-      <td>75.0</td>
-    </tr>
-    <tr>
-      <th>316</th>
-      <td>墨尔本宾馆(Melbourne Hostel)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙尖沙咀弥敦道40号重庆大厦E座10字楼E1室</td>
-      <td>4.283827</td>
-      <td>2.0</td>
-      <td>93.0</td>
-    </tr>
-    <tr>
-      <th>232</th>
-      <td>香港苹果旅馆(尖沙咀店)(家庭旅馆)(Apple Inn@ TsimShaTsui)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港九龙尖沙海防道55号海防大厦11楼03单元</td>
-      <td>3.900000</td>
-      <td>1845.0</td>
-      <td>97.0</td>
-    </tr>
-    <tr>
-      <th>388</th>
-      <td>香港东方明珠宾馆(Oriental Pearl Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道38号重庆大厦A座三楼总台</td>
-      <td>2.700000</td>
-      <td>27.0</td>
-      <td>99.0</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>香港金岛宾馆(Golden Island Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙弥敦道385号平安大厦7字楼1室</td>
-      <td>4.300000</td>
-      <td>1855.0</td>
-      <td>99.0</td>
-    </tr>
-    <tr>
-      <th>222</th>
-      <td>香港怡家酒店(Yi Jia Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港弥敦道731-733号振宜大厦10字楼AC(九龙商务)</td>
-      <td>3.500000</td>
-      <td>808.0</td>
-      <td>102.0</td>
-    </tr>
-    <tr>
-      <th>367</th>
-      <td>香港悉尼旅馆(Sydney Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港九龙尖沙咀弥敦道36-44号重庆大厦E座7楼E5室（于A座17楼A6室登记入住）</td>
-      <td>4.283827</td>
-      <td>7.0</td>
-      <td>105.0</td>
-    </tr>
-    <tr>
-      <th>251</th>
-      <td>香港龙群宾馆(Dragon Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙旺角亚皆老街83号先施大厦7楼707室</td>
-      <td>4.200000</td>
-      <td>472.0</td>
-      <td>108.0</td>
-    </tr>
-    <tr>
-      <th>344</th>
-      <td>香港宿雾宾馆(Cebu Hotel)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>弥敦道36-44号重庆大厦A座17字楼A6 &amp; A7室</td>
-      <td>4.283827</td>
-      <td>1.0</td>
-      <td>113.0</td>
-    </tr>
-    <tr>
-      <th>407</th>
-      <td>香港Prestige旅馆(Prestige Guesthouse)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>弥敦道40号重庆大厦E座3字楼E1室</td>
-      <td>4.283827</td>
-      <td>NaN</td>
-      <td>122.0</td>
-    </tr>
-    <tr>
-      <th>394</th>
-      <td>香港加拿大人旅馆(Canadian Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港尖沙咀弥敦道36-44重庆大厦E座7层 (於E座3楼登记入住)</td>
-      <td>4.283827</td>
-      <td>5.0</td>
-      <td>122.0</td>
-    </tr>
-    <tr>
-      <th>381</th>
-      <td>香港上海青年旅舍(Shanghai Hostel Hong Kong)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港弥敦道40号重庆大厦E座5字楼E4室 (於E座3楼登记入住)</td>
-      <td>4.283827</td>
-      <td>NaN</td>
-      <td>128.0</td>
-    </tr>
-    <tr>
-      <th>336</th>
-      <td>香港Primo旅馆(Primo Guesthouse)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙尖沙咀弥敦道40号重庆大厦E座3字楼E3室</td>
-      <td>4.283827</td>
-      <td>1.0</td>
-      <td>131.0</td>
-    </tr>
-    <tr>
-      <th>297</th>
-      <td>香港甜心酒店(铜锣湾凤鸣大厦)(Sweet Heart Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>湾仔</td>
-      <td>铜锣湾利园山道54-70号凤鸣大厦1F/D室</td>
-      <td>3.900000</td>
-      <td>6.0</td>
-      <td>131.0</td>
-    </tr>
-    <tr>
-      <th>346</th>
-      <td>香港休闲小窝(Urban Pack)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>九龙城</td>
-      <td>尖沙咀海防道53至56号海防大廈14楼1410室</td>
-      <td>4.700000</td>
-      <td>66.0</td>
-      <td>137.0</td>
-    </tr>
-    <tr>
-      <th>392</th>
-      <td>香港水晶旅社(Crystal Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港尖沙咀弥敦道36-44号重庆大厦E座11楼E4室 (於E座3楼登记入住</td>
-      <td>4.283827</td>
-      <td>3.0</td>
-      <td>146.0</td>
-    </tr>
-    <tr>
-      <th>311</th>
-      <td>香港马尼拉宾馆(Manila Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D7室</td>
-      <td>3.200000</td>
-      <td>49.0</td>
-      <td>150.0</td>
-    </tr>
-    <tr>
-      <th>276</th>
-      <td>渔樵青年旅舍(香港油麻地店)(Travelholic Hostel)</td>
-      <td>青年旅舍</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>油麻地弥敦道454号安昌大厦8楼454室</td>
-      <td>4.700000</td>
-      <td>232.0</td>
-      <td>150.0</td>
-    </tr>
-    <tr>
-      <th>296</th>
-      <td>香港晴天旅舍(I Guest Hostel)</td>
-      <td>民宿</td>
-      <td>香港</td>
-      <td>湾仔</td>
-      <td>香港湾仔湾仔道221号一楼</td>
-      <td>3.700000</td>
-      <td>43.0</td>
-      <td>157.0</td>
-    </tr>
-    <tr>
-      <th>365</th>
-      <td>全球旅舍(Global Inn)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>弥敦道36-44号重庆大厦C座6楼C2室 (登记前台於E座8楼E1室)</td>
-      <td>4.283827</td>
-      <td>2.0</td>
-      <td>165.0</td>
-    </tr>
-    <tr>
-      <th>349</th>
-      <td>美丽宾馆(Lily Guest House)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙尖沙咀弥敦道40号重庆大厦E座8字楼E3室（于E座8楼E1室登记入住）</td>
-      <td>4.283827</td>
-      <td>NaN</td>
-      <td>165.0</td>
-    </tr>
-    <tr>
-      <th>374</th>
-      <td>香港惠福宾馆</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港尖沙咀弥敦道54-64B美丽都大厦3字楼A8</td>
-      <td>4.283827</td>
-      <td>2.0</td>
-      <td>166.0</td>
-    </tr>
-    <tr>
-      <th>322</th>
-      <td>香港尊贵旅馆(Hong Kong Premium Guest House)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道56-58号美丽都大厦16字楼B2,A5室（前台入住办理设在16字楼A2室）</td>
-      <td>4.800000</td>
-      <td>19.0</td>
-      <td>166.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>香港TUVE酒店(Hotel TUVE)</td>
-      <td>浪漫情侣</td>
-      <td>香港</td>
-      <td>东区</td>
-      <td>香港天后清风街16号</td>
-      <td>4.500000</td>
-      <td>1236.0</td>
-      <td>1908.0</td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td>香港洲际酒店(InterContinental Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀梳士巴利道18号</td>
-      <td>4.700000</td>
-      <td>4087.0</td>
-      <td>1932.0</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>九龙香格里拉大酒店(Kowloon Shangri-La)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙嘴麽地道64号</td>
-      <td>4.700000</td>
-      <td>8459.0</td>
-      <td>1936.0</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>香港港威酒店-马哥孛罗(Gateway Hotel Marco Polo)</td>
-      <td>休闲度假</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙嘴 广东道13号海港城</td>
-      <td>4.700000</td>
-      <td>10218.0</td>
-      <td>1988.0</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>晋逸精品酒店 中环(Butterfly on Wellington Boutique Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>中环威灵顿街122号</td>
-      <td>4.600000</td>
-      <td>1034.0</td>
-      <td>2207.0</td>
-    </tr>
-    <tr>
-      <th>230</th>
-      <td>香港馨乐庭尚圜服务公寓(Citadines Mercer Hong Kong)</td>
-      <td>酒店公寓</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>上环苏杭街29号</td>
-      <td>4.600000</td>
-      <td>166.0</td>
-      <td>2309.0</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>香港W酒店(W Hong Kong)</td>
-      <td>休闲度假</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙柯士甸道西一号港铁九龙站</td>
-      <td>4.700000</td>
-      <td>3924.0</td>
-      <td>2342.0</td>
-    </tr>
-    <tr>
-      <th>180</th>
-      <td>香港中环石板街酒店(The Pottinger Hong Kong)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>中环皇后大道中74号（与士丹利街21号交叉口）</td>
-      <td>4.500000</td>
-      <td>473.0</td>
-      <td>2352.0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>香港港丽酒店(Conrad Hong Kong)</td>
+      <th>118</th>
+      <td>香港四季酒店(Four Seasons Hotel Hong Kong)</td>
       <td>海滨风光</td>
       <td>香港</td>
       <td>中西区</td>
-      <td>金钟 金钟道88号太古广场</td>
-      <td>4.700000</td>
-      <td>2392.0</td>
-      <td>2490.0</td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td>香港普特曼酒店(The Putman)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>皇后大道中202号</td>
-      <td>4.600000</td>
-      <td>28.0</td>
-      <td>2640.0</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>香港美利酒店(The Murray Hong Kong a Niccolo Hotel)</td>
-      <td>商务出行</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>红棉路22号</td>
-      <td>4.700000</td>
-      <td>575.0</td>
-      <td>2710.0</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>香港JW万豪酒店(JW Marriott Hotel Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>金钟 金钟道88号太古广场</td>
-      <td>4.700000</td>
-      <td>2883.0</td>
-      <td>2759.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>港岛香格里拉大酒店(Island Shangri-La)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>金钟中区法院道太古广场</td>
-      <td>4.800000</td>
-      <td>4182.0</td>
-      <td>2836.0</td>
-    </tr>
-    <tr>
-      <th>116</th>
-      <td>香港君悦酒店(Grand Hyatt)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>湾仔</td>
-      <td>港湾道1号</td>
-      <td>4.700000</td>
-      <td>1579.0</td>
-      <td>2856.0</td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td>香港太子酒店-马哥孛罗(Prince Hotel Marco Polo)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙 尖沙嘴广东道23号海港城</td>
-      <td>4.700000</td>
-      <td>9948.0</td>
-      <td>3068.0</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>香港哲维斯酒店(The Jervois)</td>
-      <td>商务出行</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>苏杭街89号</td>
-      <td>4.600000</td>
-      <td>27.0</td>
-      <td>3159.0</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>香港丽思卡尔顿酒店(The Ritz-Carlton Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙 柯士甸道西1号环球贸易广场</td>
-      <td>4.800000</td>
-      <td>3553.0</td>
-      <td>3450.0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>香港文华东方酒店(Mandarin Oriental Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>中环干诺道中5号</td>
-      <td>4.800000</td>
-      <td>2452.0</td>
-      <td>3609.0</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>香港半岛酒店(The Peninsula Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀梳士巴利道</td>
-      <td>4.800000</td>
-      <td>3693.0</td>
-      <td>3862.0</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>奕居(The Upper House)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>金钟道88号太古广场</td>
-      <td>4.800000</td>
-      <td>1369.0</td>
-      <td>4356.0</td>
+      <td>中环 金融街8号</td>
+      <td>4.8</td>
+      <td>3461</td>
+      <td>12926</td>
     </tr>
     <tr>
       <th>117</th>
@@ -14070,112 +13520,45 @@ div#notebook {
       <td>香港</td>
       <td>中西区</td>
       <td>中环 皇后大道中15号置地广场</td>
-      <td>4.800000</td>
-      <td>1285.0</td>
-      <td>4443.0</td>
+      <td>4.8</td>
+      <td>1285</td>
+      <td>4443</td>
     </tr>
     <tr>
-      <th>118</th>
-      <td>香港四季酒店(Four Seasons Hotel Hong Kong)</td>
+      <th>90</th>
+      <td>奕居(The Upper House)</td>
       <td>海滨风光</td>
       <td>香港</td>
       <td>中西区</td>
-      <td>中环 金融街8号</td>
-      <td>4.800000</td>
-      <td>3461.0</td>
-      <td>12926.0</td>
+      <td>金钟道88号太古广场</td>
+      <td>4.8</td>
+      <td>1369</td>
+      <td>4356</td>
     </tr>
     <tr>
-      <th>0</th>
-      <td>NaN</td>
-      <td>其他</td>
-      <td>NaN</td>
-      <td>其他</td>
-      <td>NaN</td>
-      <td>4.283827</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>228</th>
-      <td>香港红茶馆酒店(油麻地鸦打街店)(Bridal Tea House Hotel (Yau M...</td>
-      <td>浪漫情侣</td>
+      <th>84</th>
+      <td>香港半岛酒店(The Peninsula Hong Kong)</td>
+      <td>海滨风光</td>
       <td>香港</td>
       <td>油尖旺</td>
-      <td>香港九龙油麻地鸦打街6号</td>
-      <td>4.100000</td>
-      <td>5718.0</td>
-      <td>NaN</td>
+      <td>尖沙咀梳士巴利道</td>
+      <td>4.8</td>
+      <td>3693</td>
+      <td>3862</td>
     </tr>
     <tr>
-      <th>289</th>
-      <td>奥华·时尚精品酒店 - 中环(Ovolo Central – 2 Arbuthnot Road)</td>
-      <td>商务出行</td>
+      <th>20</th>
+      <td>香港文华东方酒店(Mandarin Oriental Hong Kong)</td>
+      <td>海滨风光</td>
       <td>香港</td>
       <td>中西区</td>
-      <td>中环亚毕诺道2号</td>
-      <td>4.600000</td>
-      <td>67.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>340</th>
-      <td>香港洲际半岛酒店(MK-IP HOTEL)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>旺角上海街653-655号2楼</td>
-      <td>2.700000</td>
-      <td>170.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>359</th>
-      <td>香港君俊商务酒店(JJ Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>湾仔道165-171号乐基中心9-12楼</td>
-      <td>4.283827</td>
-      <td>2.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>369</th>
-      <td>香港金多宝宾馆</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港九龙旺角弥敦道739号金轮大厦6字楼H座</td>
-      <td>4.300000</td>
-      <td>27.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>379</th>
-      <td>香港牛津尊贵旅舍(Oxford Premium Guest House)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道56-58号美丽都大厦16字楼A2室</td>
-      <td>4.700000</td>
-      <td>15.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>401</th>
-      <td>香港水晶旅社(Crystal Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港尖沙咀弥敦道36-44号重庆大厦E座11楼E4室 (於E座3楼登记入住</td>
-      <td>4.283827</td>
-      <td>3.0</td>
-      <td>NaN</td>
+      <td>中环干诺道中5号</td>
+      <td>4.8</td>
+      <td>2452</td>
+      <td>3609</td>
     </tr>
   </tbody>
 </table>
-<p>421 rows × 8 columns</p>
 </div>
 </div>
 
@@ -14497,6 +13880,72 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;价格&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>906.282671432254</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;价格&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>270619</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14649,10 +14098,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">,</span><span class="s1">&#39;价格&#39;</span><span class="p">],</span><span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span><span class="kc">False</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">,</span><span class="s1">&#39;价格&#39;</span><span class="p">],</span><span class="n">ascending</span><span class="o">=</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">))[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -14665,7 +14114,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -14700,653 +14149,15 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>403</th>
-      <td>香港中 港酒店(家庭旅馆)(HK-China Hotel)</td>
+      <th>212</th>
+      <td>香港李女士宾馆(家庭旅馆)(MS LI GUEST HOUSE)</td>
       <td>地铁周边</td>
       <td>香港</td>
       <td>油尖旺</td>
-      <td>碧街33-39号永华大厦1楼（油麻地地铁站A1出口直走50米）</td>
-      <td>1.5</td>
-      <td>7.0</td>
-      <td>429.0</td>
-    </tr>
-    <tr>
-      <th>283</th>
-      <td>香港经济型酒店  (家庭旅馆)(Hong Kong Budget Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D8&amp; E2室</td>
-      <td>2.0</td>
-      <td>29.0</td>
-      <td>67.0</td>
-    </tr>
-    <tr>
-      <th>285</th>
-      <td>巴黎旅馆(Paris Guest House (D2, 10/F))</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>Flat D2, 10/F, Block D, Chungking Mansion, 40 ...</td>
-      <td>2.0</td>
-      <td>5.0</td>
-      <td>67.0</td>
-    </tr>
-    <tr>
-      <th>371</th>
-      <td>香港港龙酒店(Comfort Lodge Hong Kong)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港九龙佐敦德兴街7-8号（礼苑，接待处位于A座2楼）</td>
-      <td>2.2</td>
-      <td>18.0</td>
-      <td>492.0</td>
-    </tr>
-    <tr>
-      <th>337</th>
-      <td>香港欣欣宾馆(家庭旅馆)(YAN YAN GUEST HOUSE)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道40号重庆大厦E座8字楼E1室</td>
-      <td>2.3</td>
-      <td>6.0</td>
-      <td>977.0</td>
-    </tr>
-    <tr>
-      <th>363</th>
-      <td>香港京华宾馆(佐敦)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙佐敦南京街19-21号3楼2/F</td>
-      <td>2.3</td>
-      <td>40.0</td>
-      <td>328.0</td>
-    </tr>
-    <tr>
-      <th>368</th>
-      <td>香港新中华宾馆(New China Yan Yan Guesthouse)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙尖沙咀弥敦道36-44号重庆大厦D座9楼D7:D2</td>
-      <td>2.5</td>
-      <td>33.0</td>
-      <td>984.0</td>
-    </tr>
-    <tr>
-      <th>377</th>
-      <td>香港尖沙咀大福星光酒店(Tsim Sha Tsui Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道101号海防大厦8楼3室（六福珠宝楼上）</td>
-      <td>2.7</td>
-      <td>109.0</td>
-      <td>641.0</td>
-    </tr>
-    <tr>
-      <th>388</th>
-      <td>香港东方明珠宾馆(Oriental Pearl Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道38号重庆大厦A座三楼总台</td>
-      <td>2.7</td>
-      <td>27.0</td>
-      <td>99.0</td>
-    </tr>
-    <tr>
-      <th>340</th>
-      <td>香港洲际半岛酒店(MK-IP HOTEL)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>旺角上海街653-655号2楼</td>
-      <td>2.7</td>
-      <td>170.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>342</th>
-      <td>香港迎酒店(HI-INN)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙尖沙咀弥敦道36-40号重庆大厦B座14楼B3室</td>
-      <td>2.8</td>
-      <td>61.0</td>
-      <td>172.0</td>
-    </tr>
-    <tr>
-      <th>301</th>
-      <td>香港海景渡假乐园(Hong Kong Seaview Holiday Resort)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>离岛</td>
-      <td>大屿山梅窝东湾头路11号</td>
-      <td>2.9</td>
-      <td>5.0</td>
-      <td>881.0</td>
-    </tr>
-    <tr>
-      <th>389</th>
-      <td>香港摩登宾馆(MODERN HOTEL)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>旺角登打士街33号登德大厦2/F A室</td>
-      <td>2.9</td>
-      <td>58.0</td>
-      <td>479.0</td>
-    </tr>
-    <tr>
-      <th>331</th>
-      <td>香港金桥旅馆(Golden Bridge Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港九龙尖沙咀么地道44号丽东大厦3号电梯4/F ，A室</td>
-      <td>3.1</td>
-      <td>145.0</td>
-      <td>268.0</td>
-    </tr>
-    <tr>
-      <th>328</th>
-      <td>80后潘多拉旅馆(香港佐敦店)(原华丰宾馆)(Pandora After 80s Jordan)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙佐敦佐敦道15号华丰大厦1字楼H室</td>
-      <td>3.1</td>
-      <td>36.0</td>
-      <td>70.0</td>
-    </tr>
-    <tr>
-      <th>341</th>
-      <td>香港联安宾馆(家庭旅馆)(Luen On Guest House)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道54-64号美丽都大厦13楼E3室</td>
-      <td>3.2</td>
-      <td>22.0</td>
-      <td>449.0</td>
-    </tr>
-    <tr>
-      <th>281</th>
-      <td>香港豪源酒店(Ho Yuen Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港旺角奶路臣街11号远东发展旺角大厦11楼</td>
-      <td>3.2</td>
-      <td>79.0</td>
-      <td>333.0</td>
-    </tr>
-    <tr>
-      <th>366</th>
-      <td>佳旺宾馆(家庭旅馆)(Jie Wang Motel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙旺角亚皆老街83号先施大厦1205室</td>
-      <td>3.2</td>
-      <td>66.0</td>
-      <td>254.0</td>
-    </tr>
-    <tr>
-      <th>416</th>
-      <td>香港天天宾馆(TIN TIN GUEST HOUSE)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>旺角弥敦道607号新兴大厦1517A</td>
-      <td>3.2</td>
-      <td>16.0</td>
-      <td>227.0</td>
-    </tr>
-    <tr>
-      <th>378</th>
-      <td>香港新豪华宾馆(家庭旅馆)(New Ho Wah Villa)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>庙街253-255号世华商业大厦4字楼</td>
-      <td>3.2</td>
-      <td>147.0</td>
-      <td>199.0</td>
-    </tr>
-    <tr>
-      <th>311</th>
-      <td>香港马尼拉宾馆(Manila Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D7室</td>
-      <td>3.2</td>
-      <td>49.0</td>
-      <td>150.0</td>
-    </tr>
-    <tr>
-      <th>333</th>
-      <td>香港星彩旅馆 (家庭旅馆)(Lucky Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道739号金轮大厦10字楼B室</td>
-      <td>3.3</td>
-      <td>45.0</td>
-      <td>226.0</td>
-    </tr>
-    <tr>
-      <th>350</th>
-      <td>香港斯凯勒科酒店(Hotel Skylark)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道36-44号重庆大厦16字楼E座E4室</td>
-      <td>3.3</td>
-      <td>26.0</td>
-      <td>172.0</td>
-    </tr>
-    <tr>
-      <th>345</th>
-      <td>香港德国旅舍Germany Hostel(Germany Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D8&amp; E2室</td>
-      <td>3.3</td>
-      <td>46.0</td>
-      <td>71.0</td>
-    </tr>
-    <tr>
-      <th>376</th>
-      <td>香港日夜宾馆(Day and Night Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道36-44号重庆大厦10字楼D,E座D8&amp; E2室</td>
-      <td>3.3</td>
-      <td>63.0</td>
-      <td>68.0</td>
-    </tr>
-    <tr>
-      <th>243</th>
-      <td>香港新时代酒店(家庭旅馆)(New Style Guest House(Phoenix Ap...</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>湾仔</td>
-      <td>铜罗湾利园山道70号凤鸣大厦4字楼A、B庢（前台位于1楼54号室）</td>
-      <td>3.4</td>
-      <td>191.0</td>
-      <td>297.0</td>
-    </tr>
-    <tr>
-      <th>201</th>
-      <td>香港永倫800酒店(WINLAND800HOTEL)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>葵青</td>
-      <td>新界青衣路一号</td>
-      <td>3.4</td>
-      <td>3098.0</td>
-      <td>196.0</td>
-    </tr>
-    <tr>
-      <th>325</th>
-      <td>香港蓝天宾馆(家庭旅馆)(Blue Sky Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港九龙旺角弥敦道607号新兴大厦1410室</td>
-      <td>3.5</td>
-      <td>157.0</td>
-      <td>245.0</td>
-    </tr>
-    <tr>
-      <th>135</th>
-      <td>香港潘多拉酒店(Hotel Pandora)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>香港九龙佐敦弥敦道321号金汉大厦九楼</td>
-      <td>3.5</td>
-      <td>5759.0</td>
-      <td>194.0</td>
-    </tr>
-    <tr>
-      <th>246</th>
-      <td>香港新迎宾馆(Sun Ying Hostel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙旺角亚皆老街83号先施大厦617室</td>
-      <td>3.5</td>
-      <td>321.0</td>
-      <td>189.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>香港愉景湾酒店(Auberge Discovery Bay Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>离岛</td>
-      <td>大屿山愉景湾海澄湖畔路88号</td>
-      <td>4.7</td>
-      <td>6926.0</td>
-      <td>676.0</td>
-    </tr>
-    <tr>
-      <th>229</th>
-      <td>香港仕德福山景酒店(Stanford Hillview Hotel)</td>
-      <td>浪漫情侣</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙嘴 天文台道13-17号</td>
-      <td>4.7</td>
-      <td>2986.0</td>
-      <td>581.0</td>
-    </tr>
-    <tr>
-      <th>176</th>
-      <td>香港美庭旅馆(CINDY HOSTOL)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙尖沙咀弥敦道80号金銮大厦12楼D</td>
-      <td>4.7</td>
-      <td>864.0</td>
-      <td>350.0</td>
-    </tr>
-    <tr>
-      <th>293</th>
-      <td>香港泰山宾馆(海防店)(HK TAI SAN GUEST HOUSE(Haiphong Br...</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙尖沙咀弥敦道99号海防大厦9楼1室</td>
-      <td>4.7</td>
-      <td>165.0</td>
-      <td>348.0</td>
-    </tr>
-    <tr>
-      <th>271</th>
-      <td>香港漫漫旅馆(AA INN)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙尖沙咀弥敦道83-97号华源大厦9楼C3室</td>
-      <td>4.7</td>
-      <td>455.0</td>
-      <td>298.0</td>
-    </tr>
-    <tr>
-      <th>324</th>
-      <td>香港威尼斯宾馆</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港油尖旺区旺角弥顿道580号恒隆大厦4楼</td>
-      <td>4.7</td>
-      <td>48.0</td>
-      <td>298.0</td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td>香港港星宾馆(Hong Kong Star Guest House)</td>
-      <td>印象好</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>油麻地弥敦道383-389号平安大楼3字楼8室</td>
-      <td>4.7</td>
-      <td>68.0</td>
-      <td>297.0</td>
-    </tr>
-    <tr>
-      <th>310</th>
-      <td>香港广西宾馆(家庭宾馆)(GUAN GIX GUEST HOUSE)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>弥敦道300号华丰大厦10字楼D室</td>
-      <td>4.7</td>
-      <td>21.0</td>
-      <td>254.0</td>
-    </tr>
-    <tr>
-      <th>235</th>
-      <td>香港金坊宾馆(GOLD PALACE HOTEL)</td>
-      <td>浪漫情侣</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>香港油尖旺区九龙旺角弥敦道607号新兴大厦22字楼2201室</td>
-      <td>4.7</td>
-      <td>436.0</td>
-      <td>245.0</td>
-    </tr>
-    <tr>
-      <th>238</th>
-      <td>香港3D龙门客栈(3D inn Dragon)</td>
-      <td>客栈</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>九龙油尖旺区九龙尖沙咀弥敦道58号美丽都大厦3字楼F2室于13楼C2室登记入住</td>
-      <td>4.7</td>
-      <td>218.0</td>
-      <td>245.0</td>
-    </tr>
-    <tr>
-      <th>351</th>
-      <td>香港伦敦旅馆(London Guest House)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道56-58号美丽都大厦13字楼F2室</td>
-      <td>4.7</td>
-      <td>81.0</td>
-      <td>210.0</td>
-    </tr>
-    <tr>
-      <th>307</th>
-      <td>香港文苑宾馆(Man Yuen Hotel)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>旺角弥敦道737号金轮大厦二楼H室</td>
-      <td>4.7</td>
-      <td>5.0</td>
-      <td>169.0</td>
-    </tr>
-    <tr>
-      <th>276</th>
-      <td>渔樵青年旅舍(香港油麻地店)(Travelholic Hostel)</td>
-      <td>青年旅舍</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>油麻地弥敦道454号安昌大厦8楼454室</td>
-      <td>4.7</td>
-      <td>232.0</td>
-      <td>150.0</td>
-    </tr>
-    <tr>
-      <th>346</th>
-      <td>香港休闲小窝(Urban Pack)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>九龙城</td>
-      <td>尖沙咀海防道53至56号海防大廈14楼1410室</td>
-      <td>4.7</td>
-      <td>66.0</td>
-      <td>137.0</td>
-    </tr>
-    <tr>
-      <th>379</th>
-      <td>香港牛津尊贵旅舍(Oxford Premium Guest House)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道56-58号美丽都大厦16字楼A2室</td>
-      <td>4.7</td>
-      <td>15.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>118</th>
-      <td>香港四季酒店(Four Seasons Hotel Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>中环 金融街8号</td>
-      <td>4.8</td>
-      <td>3461.0</td>
-      <td>12926.0</td>
-    </tr>
-    <tr>
-      <th>117</th>
-      <td>香港置地文华东方酒店(The Landmark Mandarin Oriental HK)</td>
-      <td>休闲度假</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>中环 皇后大道中15号置地广场</td>
-      <td>4.8</td>
-      <td>1285.0</td>
-      <td>4443.0</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>奕居(The Upper House)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>金钟道88号太古广场</td>
-      <td>4.8</td>
-      <td>1369.0</td>
-      <td>4356.0</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>香港半岛酒店(The Peninsula Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀梳士巴利道</td>
-      <td>4.8</td>
-      <td>3693.0</td>
-      <td>3862.0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>香港文华东方酒店(Mandarin Oriental Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>中环干诺道中5号</td>
-      <td>4.8</td>
-      <td>2452.0</td>
-      <td>3609.0</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>香港丽思卡尔顿酒店(The Ritz-Carlton Hong Kong)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙 柯士甸道西1号环球贸易广场</td>
-      <td>4.8</td>
-      <td>3553.0</td>
-      <td>3450.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>港岛香格里拉大酒店(Island Shangri-La)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>中西区</td>
-      <td>金钟中区法院道太古广场</td>
-      <td>4.8</td>
-      <td>4182.0</td>
-      <td>2836.0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>迪士尼探索家度假酒店(Disney Explorers Lodge)</td>
-      <td>海滨风光</td>
-      <td>香港</td>
-      <td>离岛</td>
-      <td>迪士尼乐园度假区</td>
-      <td>4.8</td>
-      <td>4794.0</td>
-      <td>1662.0</td>
-    </tr>
-    <tr>
-      <th>249</th>
-      <td>香港新月宾馆(Sasa Inn)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>九龙城</td>
-      <td>尖沙咀弥敦道87号华源大厦乘坐3号或4号电梯8楼C1</td>
-      <td>4.8</td>
-      <td>1247.0</td>
-      <td>486.0</td>
-    </tr>
-    <tr>
-      <th>203</th>
-      <td>香港风格时尚家庭旅馆(Feng Ge Shi Shang Hotel)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>九龙尖沙咀弥敦道99-101号海防大厦10楼1005室</td>
-      <td>4.8</td>
-      <td>1375.0</td>
-      <td>307.0</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>香港和平客栈(HK Peaceful Guesthouse)</td>
-      <td>民宿</td>
-      <td>香港</td>
-      <td>其他</td>
-      <td>尖沙咀弥敦道58号美丽都大厦13楼B1室于13楼C2室登记入住</td>
-      <td>4.8</td>
-      <td>511.0</td>
-      <td>264.0</td>
-    </tr>
-    <tr>
-      <th>200</th>
-      <td>香港鸣人宾馆(Naruto Inn)</td>
-      <td>地铁周边</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道83-97号华源大厦10F B4室</td>
-      <td>4.8</td>
-      <td>921.0</td>
-      <td>190.0</td>
-    </tr>
-    <tr>
-      <th>322</th>
-      <td>香港尊贵旅馆(Hong Kong Premium Guest House)</td>
-      <td>其他</td>
-      <td>香港</td>
-      <td>油尖旺</td>
-      <td>尖沙咀弥敦道56-58号美丽都大厦16字楼B2,A5室（前台入住办理设在16字楼A2室）</td>
-      <td>4.8</td>
-      <td>19.0</td>
-      <td>166.0</td>
+      <td>弥敦道58号美丽都大厦E座5字楼E1室</td>
+      <td>4.9</td>
+      <td>7</td>
+      <td>351</td>
     </tr>
     <tr>
       <th>339</th>
@@ -15356,23 +14167,44 @@ div#notebook {
       <td>油尖旺</td>
       <td>尖沙咀弥敦道68号金冠大厦13楼C室</td>
       <td>4.9</td>
-      <td>10.0</td>
-      <td>395.0</td>
+      <td>10</td>
+      <td>395</td>
     </tr>
     <tr>
-      <th>212</th>
-      <td>香港李女士宾馆(家庭旅馆)(MS LI GUEST HOUSE)</td>
+      <th>322</th>
+      <td>香港尊贵旅馆(Hong Kong Premium Guest House)</td>
+      <td>其他</td>
+      <td>香港</td>
+      <td>油尖旺</td>
+      <td>尖沙咀弥敦道56-58号美丽都大厦16字楼B2,A5室（前台入住办理设在16字楼A2室）</td>
+      <td>4.8</td>
+      <td>19</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>香港鸣人宾馆(Naruto Inn)</td>
       <td>地铁周边</td>
       <td>香港</td>
       <td>油尖旺</td>
-      <td>弥敦道58号美丽都大厦E座5字楼E1室</td>
-      <td>4.9</td>
-      <td>7.0</td>
-      <td>351.0</td>
+      <td>尖沙咀弥敦道83-97号华源大厦10F B4室</td>
+      <td>4.8</td>
+      <td>921</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>香港和平客栈(HK Peaceful Guesthouse)</td>
+      <td>民宿</td>
+      <td>香港</td>
+      <td>其他</td>
+      <td>尖沙咀弥敦道58号美丽都大厦13楼B1室于13楼C2室登记入住</td>
+      <td>4.8</td>
+      <td>511</td>
+      <td>264</td>
     </tr>
   </tbody>
 </table>
-<p>421 rows × 8 columns</p>
 </div>
 </div>
 
@@ -15392,13 +14224,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;名字&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
-<span class="n">b</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">][</span><span class="s1">&#39;名字&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">/</span><span class="n">a</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -15411,14 +14240,48 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>13
-0.031026252983293555
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>12</pre>
 </div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.030226700251889168</pre>
+</div>
+
 </div>
 
 </div>
@@ -15541,17 +14404,17 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>（10）找出酒店评分人数排名前20的酒店，并计算他们的价格均值。</p>
+<p>正确答案：</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;评分人数&#39;</span><span class="p">)[</span><span class="s1">&#39;价格&#39;</span><span class="p">][:</span><span class="mi">20</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;地区&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15564,13 +14427,70 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>246.55555555555554</pre>
+<pre>油尖旺     0.465995
+其他      0.141058
+湾仔      0.103275
+中西区     0.083123
+九龙城     0.052897
+东区      0.040302
+离岛      0.027708
+观塘      0.017632
+荃湾      0.017632
+南区      0.012594
+葵青      0.012594
+沙田      0.010076
+屯门      0.005038
+元朗      0.005038
+罗湖区     0.002519
+深水埗区    0.002519
+Name: 地区, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>（10）找出酒店评分人数排名前20的酒店，并计算他们的价格均值。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;评分人数&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">20</span><span class="p">][</span><span class="s1">&#39;价格&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1110.55</pre>
 </div>
 
 </div>
@@ -15586,6 +14506,41 @@ div#notebook {
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;类型&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([&#39;休闲度假&#39;, &#39;浪漫情侣&#39;, &#39;商务出行&#39;, &#39;海滨风光&#39;, &#39;地铁周边&#39;, &#39;交通方便&#39;, &#39;亲子酒店&#39;, &#39;其他&#39;, &#39;民宿&#39;,
+       &#39;印象好&#39;, &#39;酒店公寓&#39;, &#39;青年旅舍&#39;, &#39;客栈&#39;, &#39;火车站周边&#39;, &#39;老板热情&#39;, &#39;环境不错&#39;, &#39;干净卫生&#39;,
+       &#39;大学周边&#39;], dtype=object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -15622,6 +14577,91 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;类型&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>地铁周边     172
+浪漫情侣      68
+海滨风光      61
+休闲度假      31
+其他        20
+商务出行      13
+民宿         6
+亲子酒店       5
+酒店公寓       5
+青年旅舍       4
+环境不错       3
+客栈         3
+火车站周边      1
+印象好        1
+老板热情       1
+干净卫生       1
+交通方便       1
+大学周边       1
+Name: 类型, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;地区&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([&#39;元朗&#39;, &#39;东区&#39;, &#39;油尖旺&#39;, &#39;湾仔&#39;, &#39;观塘&#39;, &#39;中西区&#39;, &#39;南区&#39;, &#39;离岛&#39;, &#39;九龙城&#39;, &#39;荃湾&#39;,
+       &#39;屯门&#39;, &#39;葵青&#39;, &#39;其他&#39;, &#39;沙田&#39;, &#39;深水埗区&#39;, &#39;罗湖区&#39;], dtype=object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -15645,6 +14685,55 @@ div#notebook {
 
 <div class="output_text output_subarea output_execute_result">
 <pre>16</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;地区&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>油尖旺     185
+其他       56
+湾仔       41
+中西区      33
+九龙城      21
+东区       16
+离岛       11
+观塘        7
+荃湾        7
+南区        5
+葵青        5
+沙田        4
+屯门        2
+元朗        2
+罗湖区       1
+深水埗区      1
+Name: 地区, dtype: int64</pre>
 </div>
 
 </div>
@@ -15795,10 +14884,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;类型&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;评分人数&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;类型&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;评分人数&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -15811,7 +14900,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[58]:</div>
 
 
 
@@ -15862,58 +14951,6 @@ div#notebook {
       <th>印象好</th>
       <td>68.0</td>
     </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>9697.0</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>91525.0</td>
-    </tr>
-    <tr>
-      <th>大学周边</th>
-      <td>23.0</td>
-    </tr>
-    <tr>
-      <th>客栈</th>
-      <td>229.0</td>
-    </tr>
-    <tr>
-      <th>干净卫生</th>
-      <td>146.0</td>
-    </tr>
-    <tr>
-      <th>民宿</th>
-      <td>2493.0</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>244154.0</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>394600.0</td>
-    </tr>
-    <tr>
-      <th>火车站周边</th>
-      <td>578.0</td>
-    </tr>
-    <tr>
-      <th>环境不错</th>
-      <td>1327.0</td>
-    </tr>
-    <tr>
-      <th>老板热情</th>
-      <td>48.0</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>1967.0</td>
-    </tr>
-    <tr>
-      <th>青年旅舍</th>
-      <td>2605.0</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -15935,10 +14972,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;类型&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;价格&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;类型&#39;</span><span class="p">],</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;价格&#39;</span><span class="p">],</span><span class="n">aggfunc</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">])[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -15951,7 +14988,25 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\pandas\core\reshape\pivot.py:45: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass &#39;sort=False&#39;.
+
+To retain the current behavior and silence the warning, pass &#39;sort=True&#39;.
+
+  return concat(pieces, keys=keys, axis=1)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -15966,201 +15021,48 @@ div#notebook {
         vertical-align: top;
     }
 
-    .dataframe thead th {
-        text-align: right;
+    .dataframe thead tr th {
+        text-align: left;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+    <tr>
       <th></th>
       <th>价格</th>
-    </tr>
-    <tr>
-      <th>类型</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>亲子酒店</th>
-      <td>546.616227</td>
-    </tr>
-    <tr>
-      <th>休闲度假</th>
-      <td>827.492707</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>221.289751</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>870.595663</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>378.430208</td>
-    </tr>
-    <tr>
-      <th>客栈</th>
-      <td>135.268560</td>
-    </tr>
-    <tr>
-      <th>民宿</th>
-      <td>127.000394</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>303.356119</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>1746.828349</td>
-    </tr>
-    <tr>
-      <th>环境不错</th>
-      <td>161.283394</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>697.624899</td>
-    </tr>
-    <tr>
-      <th>青年旅舍</th>
-      <td>116.851401</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;类型&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;价格&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[47]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
       <th>价格</th>
-    </tr>
-    <tr>
-      <th>类型</th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>交通方便</th>
       <td>421.000000</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>亲子酒店</th>
       <td>745.400000</td>
+      <td>546.616227</td>
     </tr>
     <tr>
       <th>休闲度假</th>
       <td>1127.774194</td>
+      <td>827.492707</td>
     </tr>
     <tr>
       <th>其他</th>
-      <td>274.133333</td>
+      <td>269.300000</td>
+      <td>199.264727</td>
     </tr>
     <tr>
       <th>印象好</th>
       <td>297.000000</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>1045.153846</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>378.937853</td>
-    </tr>
-    <tr>
-      <th>大学周边</th>
-      <td>325.000000</td>
-    </tr>
-    <tr>
-      <th>客栈</th>
-      <td>372.750000</td>
-    </tr>
-    <tr>
-      <th>干净卫生</th>
-      <td>185.000000</td>
-    </tr>
-    <tr>
-      <th>民宿</th>
-      <td>258.500000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>608.573529</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>1543.573770</td>
-    </tr>
-    <tr>
-      <th>火车站周边</th>
-      <td>968.000000</td>
-    </tr>
-    <tr>
-      <th>环境不错</th>
-      <td>357.666667</td>
-    </tr>
-    <tr>
-      <th>老板热情</th>
-      <td>385.000000</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>1182.000000</td>
-    </tr>
-    <tr>
-      <th>青年旅舍</th>
-      <td>189.250000</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -16183,10 +15085,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;地区&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;价格&#39;</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span><span class="n">aggfunc</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;地区&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;价格&#39;</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span><span class="n">aggfunc</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">])[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -16199,7 +15101,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[48]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -16248,114 +15150,37 @@ div#notebook {
     <tr>
       <th>东区</th>
       <td>1908.0</td>
-      <td>4.700000</td>
+      <td>4.7</td>
       <td>331.0</td>
-      <td>4.200000</td>
+      <td>4.2</td>
     </tr>
     <tr>
       <th>中西区</th>
       <td>12926.0</td>
-      <td>4.800000</td>
+      <td>4.8</td>
       <td>254.0</td>
-      <td>3.800000</td>
+      <td>3.8</td>
     </tr>
     <tr>
       <th>九龙城</th>
       <td>1742.0</td>
-      <td>4.800000</td>
+      <td>4.8</td>
       <td>137.0</td>
-      <td>3.700000</td>
+      <td>3.7</td>
     </tr>
     <tr>
       <th>元朗</th>
       <td>425.0</td>
-      <td>4.600000</td>
+      <td>4.6</td>
       <td>422.0</td>
-      <td>4.500000</td>
+      <td>4.5</td>
     </tr>
     <tr>
       <th>其他</th>
       <td>1450.0</td>
-      <td>4.800000</td>
+      <td>4.8</td>
       <td>67.0</td>
-      <td>2.000000</td>
-    </tr>
-    <tr>
-      <th>南区</th>
-      <td>553.0</td>
-      <td>4.400000</td>
-      <td>185.0</td>
-      <td>3.800000</td>
-    </tr>
-    <tr>
-      <th>屯门</th>
-      <td>696.0</td>
-      <td>4.700000</td>
-      <td>582.0</td>
-      <td>4.500000</td>
-    </tr>
-    <tr>
-      <th>沙田</th>
-      <td>1052.0</td>
-      <td>4.700000</td>
-      <td>569.0</td>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>油尖旺</th>
-      <td>3862.0</td>
-      <td>4.900000</td>
-      <td>67.0</td>
-      <td>1.500000</td>
-    </tr>
-    <tr>
-      <th>深水埗区</th>
-      <td>648.0</td>
-      <td>4.300000</td>
-      <td>648.0</td>
-      <td>4.300000</td>
-    </tr>
-    <tr>
-      <th>湾仔</th>
-      <td>2856.0</td>
-      <td>4.700000</td>
-      <td>131.0</td>
-      <td>3.400000</td>
-    </tr>
-    <tr>
-      <th>离岛</th>
-      <td>1667.0</td>
-      <td>4.800000</td>
-      <td>352.0</td>
-      <td>2.900000</td>
-    </tr>
-    <tr>
-      <th>罗湖区</th>
-      <td>506.0</td>
-      <td>4.283827</td>
-      <td>506.0</td>
-      <td>4.283827</td>
-    </tr>
-    <tr>
-      <th>荃湾</th>
-      <td>1035.0</td>
-      <td>4.500000</td>
-      <td>225.0</td>
-      <td>4.283827</td>
-    </tr>
-    <tr>
-      <th>葵青</th>
-      <td>423.0</td>
-      <td>4.400000</td>
-      <td>196.0</td>
-      <td>3.400000</td>
-    </tr>
-    <tr>
-      <th>观塘</th>
-      <td>1132.0</td>
-      <td>4.600000</td>
-      <td>448.0</td>
-      <td>4.200000</td>
+      <td>2.0</td>
     </tr>
   </tbody>
 </table>
@@ -16378,10 +15203,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;地区&#39;</span><span class="p">,</span><span class="s1">&#39;类型&#39;</span><span class="p">],</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;评分&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;地区&#39;</span><span class="p">,</span><span class="s1">&#39;类型&#39;</span><span class="p">],</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span><span class="n">aggfunc</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">])[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -16394,7 +15219,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -16409,20 +15234,32 @@ div#notebook {
         vertical-align: top;
     }
 
-    .dataframe thead th {
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th></th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>评分</th>
       <th>评分</th>
     </tr>
     <tr>
       <th>地区</th>
       <th>类型</th>
+      <th></th>
       <th></th>
     </tr>
   </thead>
@@ -16431,503 +15268,27 @@ div#notebook {
       <th rowspan="5" valign="top">东区</th>
       <th>其他</th>
       <td>4.600000</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>商务出行</th>
       <td>4.500000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>客栈</th>
       <td>4.283827</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>浪漫情侣</th>
       <td>4.425000</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.512500</td>
-    </tr>
-    <tr>
-      <th rowspan="7" valign="top">中西区</th>
-      <th>亲子酒店</th>
-      <td>4.600000</td>
-    </tr>
-    <tr>
-      <th>休闲度假</th>
-      <td>4.650000</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>4.550000</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.325000</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.664286</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>4.450000</td>
-    </tr>
-    <tr>
-      <th rowspan="7" valign="top">九龙城</th>
-      <th>亲子酒店</th>
-      <td>4.100000</td>
-    </tr>
-    <tr>
-      <th>休闲度假</th>
-      <td>4.480000</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>3.700000</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>4.516667</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.350000</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.700000</td>
-    </tr>
-    <tr>
-      <th>环境不错</th>
-      <td>4.200000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">元朗</th>
-      <th>休闲度假</th>
-      <td>4.600000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.500000</td>
-    </tr>
-    <tr>
-      <th rowspan="8" valign="top">其他</th>
-      <th>其他</th>
-      <td>4.157270</td>
-    </tr>
-    <tr>
-      <th>印象好</th>
-      <td>4.700000</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>4.112028</td>
-    </tr>
-    <tr>
-      <th>大学周边</th>
-      <td>4.500000</td>
-    </tr>
-    <tr>
-      <th>客栈</th>
-      <td>4.700000</td>
-    </tr>
-    <tr>
-      <th>民宿</th>
-      <td>4.550000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.700000</td>
-    </tr>
-    <tr>
-      <th>环境不错</th>
-      <td>4.500000</td>
-    </tr>
-    <tr>
-      <th>南区</th>
-      <th>休闲度假</th>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <th>...</th>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th rowspan="5" valign="top">油尖旺</th>
-      <th>浪漫情侣</th>
-      <td>4.403448</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.638889</td>
-    </tr>
-    <tr>
-      <th>火车站周边</th>
-      <td>4.600000</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>4.250000</td>
-    </tr>
-    <tr>
-      <th>青年旅舍</th>
-      <td>4.375000</td>
-    </tr>
-    <tr>
-      <th>深水埗区</th>
-      <th>地铁周边</th>
-      <td>4.300000</td>
-    </tr>
-    <tr>
-      <th rowspan="9" valign="top">湾仔</th>
-      <th>亲子酒店</th>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>休闲度假</th>
-      <td>4.560000</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>4.500000</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>4.077778</td>
-    </tr>
-    <tr>
-      <th>民宿</th>
-      <td>3.700000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.446667</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.600000</td>
-    </tr>
-    <tr>
-      <th>老板热情</th>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>4.300000</td>
-    </tr>
-    <tr>
-      <th rowspan="4" valign="top">离岛</th>
-      <th>休闲度假</th>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>3.591914</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.616667</td>
-    </tr>
-    <tr>
-      <th>环境不错</th>
-      <td>4.400000</td>
-    </tr>
-    <tr>
-      <th>罗湖区</th>
-      <th>民宿</th>
-      <td>4.283827</td>
-    </tr>
-    <tr>
-      <th rowspan="4" valign="top">荃湾</th>
-      <th>休闲度假</th>
-      <td>4.500000</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>4.283827</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.350000</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.475000</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">葵青</th>
-      <th>其他</th>
-      <td>3.400000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.200000</td>
-    </tr>
-    <tr>
-      <th rowspan="4" valign="top">观塘</th>
-      <th>休闲度假</th>
-      <td>4.600000</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>4.200000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>4.550000</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>4.500000</td>
-    </tr>
-  </tbody>
-</table>
-<p>74 rows × 1 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;地区&#39;</span><span class="p">,</span><span class="s1">&#39;类型&#39;</span><span class="p">],</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;评分&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[50]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>评分</th>
-    </tr>
-    <tr>
-      <th>地区</th>
-      <th>类型</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="3" valign="top">东区</th>
-      <th>商务出行</th>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
       <td>0.150000</td>
     </tr>
     <tr>
       <th>海滨风光</th>
+      <td>4.512500</td>
       <td>0.155265</td>
-    </tr>
-    <tr>
-      <th rowspan="6" valign="top">中西区</th>
-      <th>休闲度假</th>
-      <td>0.212132</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>0.104881</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>0.339116</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>0.236291</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.108182</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>0.212132</td>
-    </tr>
-    <tr>
-      <th rowspan="4" valign="top">九龙城</th>
-      <th>休闲度假</th>
-      <td>0.130384</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>0.231661</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>0.251661</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th rowspan="3" valign="top">其他</th>
-      <th>其他</th>
-      <td>0.569942</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>0.515094</td>
-    </tr>
-    <tr>
-      <th>民宿</th>
-      <td>0.208167</td>
-    </tr>
-    <tr>
-      <th>南区</th>
-      <th>浪漫情侣</th>
-      <td>0.141421</td>
-    </tr>
-    <tr>
-      <th>沙田</th>
-      <th>休闲度假</th>
-      <td>0.115470</td>
-    </tr>
-    <tr>
-      <th rowspan="10" valign="top">油尖旺</th>
-      <th>亲子酒店</th>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>休闲度假</th>
-      <td>0.086603</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>0.578850</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>0.424264</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>0.612738</td>
-    </tr>
-    <tr>
-      <th>客栈</th>
-      <td>0.435700</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>0.163626</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.091644</td>
-    </tr>
-    <tr>
-      <th>酒店公寓</th>
-      <td>0.212132</td>
-    </tr>
-    <tr>
-      <th>青年旅舍</th>
-      <td>0.330404</td>
-    </tr>
-    <tr>
-      <th rowspan="5" valign="top">湾仔</th>
-      <th>休闲度假</th>
-      <td>0.114018</td>
-    </tr>
-    <tr>
-      <th>商务出行</th>
-      <td>0.115470</td>
-    </tr>
-    <tr>
-      <th>地铁周边</th>
-      <td>0.432371</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>0.135576</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.141421</td>
-    </tr>
-    <tr>
-      <th rowspan="3" valign="top">离岛</th>
-      <th>休闲度假</th>
-      <td>0.141421</td>
-    </tr>
-    <tr>
-      <th>其他</th>
-      <td>0.978514</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.213698</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">荃湾</th>
-      <th>浪漫情侣</th>
-      <td>0.070711</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.050000</td>
-    </tr>
-    <tr>
-      <th>葵青</th>
-      <th>浪漫情侣</th>
-      <td>0.230940</td>
-    </tr>
-    <tr>
-      <th rowspan="3" valign="top">观塘</th>
-      <th>休闲度假</th>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>浪漫情侣</th>
-      <td>0.070711</td>
-    </tr>
-    <tr>
-      <th>海滨风光</th>
-      <td>0.141421</td>
     </tr>
   </tbody>
 </table>
