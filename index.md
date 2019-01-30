@@ -36,6 +36,10 @@
 
 [Markdown页内跳转](Markdown_inside_reference.html)
 
+### Python
+
+[Basic: Python Data Analysis](Learn_Python/Python_Data_Analysis_Basic.html)
+
 ## Tools
 
 [SAM文件flag含义查询小工具](SAM_file_FLAG.html)
@@ -62,7 +66,7 @@
 
 ## Self-Enhancement
 
-Deleted. Waitting futher articles.
+[数据分析报告结构](Data_Analysis_Report_Structure.html)
 
 ---
 
