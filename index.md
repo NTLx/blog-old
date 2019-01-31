@@ -8,6 +8,8 @@
 
 [MutMap-Gap](Papers/MBS/MutMap_Gap.html)
 
+[MBS Training](MBS_training.html)
+
 ## Bioinfo
 
 ### Genome Assemble
@@ -40,6 +42,10 @@
 
 [Basic: Python Data Analysis](Learn_Python/Python_Data_Analysis_Basic.html)
 
+### R
+
+[Basic: R script](R_basic_learning.html)
+
 ## Tools
 
 [SAM文件flag含义查询小工具](SAM_file_FLAG.html)
@@ -70,4 +76,4 @@
 
 ---
 
-​														[									Back to top](#header-n599)
+[Back to top](#Papers)
