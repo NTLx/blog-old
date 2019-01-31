@@ -5,6 +5,10 @@
         <priority>0.2</priority>
     </url>
     <url>
+        <loc>https://ntlx.github.io/blog/Data_Analysis_Report_Structure.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
         <loc>https://ntlx.github.io/blog/Docker_Wordpress.html</loc>
         <priority>0.2</priority>
     </url>
@@ -37,6 +41,62 @@
         <priority>0.2</priority>
     </url>
     <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day1_basic.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day2_NumPy.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day3_Pandas_1.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day4_Pandas_2.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day5_Pandas_3.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day6_matplotlib_1.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Day7_matplotlib_2.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework1_basic.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework2_numpy.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework3_pandas_1.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework4_pandas_2.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework5_pandas_3.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework6_matplotlib_1.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/Python_Data_Analysis_Basic.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
         <loc>https://ntlx.github.io/blog/Markdown_inside_reference.html</loc>
         <priority>0.2</priority>
     </url>
@@ -49,7 +109,15 @@
         <priority>0.2</priority>
     </url>
     <url>
+        <loc>https://ntlx.github.io/blog/MBS_training.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
         <loc>https://ntlx.github.io/blog/Papers/MBS/MutMap_Gap.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://ntlx.github.io/blog/R_basic_learning.html</loc>
         <priority>0.2</priority>
     </url>
     <url>
@@ -94,15 +162,15 @@
     </url>
     <url>
         <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/15.html</loc>
-        <priority>0.3</priority>
+        <priority>0.2</priority>
     </url>
     <url>
         <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/16.html</loc>
-        <priority>0.3</priority>
+        <priority>0.2</priority>
     </url>
     <url>
         <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/17.html</loc>
-        <priority>0.3</priority>
+        <priority>0.2</priority>
     </url>
     <url>
         <loc>https://ntlx.github.io/blog/WeChat_Article/TGS/18.html</loc>
