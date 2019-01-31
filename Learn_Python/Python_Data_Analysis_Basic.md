@@ -24,7 +24,7 @@
 
 [matplotlib 1st Part](homework6_matplotlib_1.html)
 
-matplotlib 2st Part
+[matplotlib 2st Part](homework7_matplotlib_2.html)
 
 ---
 
