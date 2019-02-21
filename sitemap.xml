@@ -93,6 +93,10 @@
         <priority>0.2</priority>
     </url>
     <url>
+        <loc>https://ntlx.github.io/blog/Learn_Python/homework7_matplotlib_2.html</loc>
+        <priority>0.2</priority>
+    </url>
+    <url>
         <loc>https://ntlx.github.io/blog/Learn_Python/Python_Data_Analysis_Basic.html</loc>
         <priority>0.2</priority>
     </url>
